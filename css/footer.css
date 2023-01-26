@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Onest";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Onest/Onest-Light.eot");
+  src: url("../fonts/Onest/Onest-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Onest/Onest-Light.woff") format("woff"), url("../fonts/Onest/Onest-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Onest";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Onest/Onest-Regular.eot");
+  src: url("../fonts/Onest/Onest-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Onest/Onest-Regular.woff") format("woff"), url("../fonts/Onest/Onest-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Onest";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Onest/Onest-Medium.eot");
+  src: url("../fonts/Onest/Onest-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Onest/Onest-Medium.woff") format("woff"), url("../fonts/Onest/Onest-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Onest";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Onest/Onest-Bold.eot");
+  src: url("../fonts/Onest/Onest-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Onest/Onest-Bold.woff") format("woff"), url("../fonts/Onest/Onest-Bold.ttf") format("truetype");
+}

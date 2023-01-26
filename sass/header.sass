@@ -1,0 +1,110 @@
+@import "fonts"
+@import "vars"
+
+header
+	background: rgba(255, 255, 255, 0.9)
+	backdrop-filter: blur(50px)
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	z-index: 5
+	padding: 25px 0
+	.phone
+		margin: 0 58px 0 68px
+
+.logo
+	max-width: 185px
+	width: 100%
+	display: flex
+	align-items: center
+
+.btn-services
+	margin: 0 0 0 111px
+	padding: 0 19.5px
+	.btn-icon
+		margin: 0 10px 0 0
+		width: 16px
+		height: 15px
+		min-width: 16px
+
+.phone
+	font-size: 20px
+	font-weight: 500
+	color: #000
+	&:hover
+		color: $accent
+
+.nav-menu
+	margin: 0 auto
+
+.menu
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	font-size: 18px
+	li
+		margin: 0 39px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #000
+			position: relative
+			z-index: 1
+			&::before
+				content: ''
+				position: absolute
+				height: 100%
+				width: 0
+				background: $accent
+				transition: .3s linear
+				z-index: -1
+			&:hover
+				color: #fff
+				&::before
+					width: 100%
+
+.btn-search
+	@include d-flex
+	width: 26.5px
+	height: 26.5px
+	fill: $accent
+
+.search-wrapper
+	position: relative
+	.form-search
+		position: absolute
+		width: 604px
+		right: -22px
+		top: 50%
+		transform: translate(0,-50%)
+		z-index: 2
+		background: #fff
+		display: none
+
+.form-search
+	width: 100%
+	input
+		border-color: $accent
+		text-align: left
+		height: 46px
+	label
+		margin: 0
+	button
+		@include d-flex
+		width: 26.5px
+		height: 26.5px
+		fill: $accent
+		position: absolute
+		top: 50%
+		right: 22px
+		transform: translate(0,-50%)
+		background: transparent
+
+.btn-burger
+	@include d-flex
+	width: 25px
+	min-width: 25px		
+	height: 23px
+	fill: $accent
+	margin: 0 0 0 119px
