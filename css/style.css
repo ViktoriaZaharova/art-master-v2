@@ -118,7 +118,6 @@ input, textarea, select {
   height: 50px;
   background: transparent;
   color: #000;
-  text-align: center;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
   color: #A5A5A5;
@@ -144,7 +143,7 @@ input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:f
 label {
   display: block;
   width: 100%;
-  margin: 0 0 13px;
+  margin: 0 0 20px;
 }
 label:last-child {
   margin: 0;
@@ -201,7 +200,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 }
 
 .btn-md {
-  height: 52px;
+  height: 50px;
 }
 
 .btn-lg {
@@ -363,6 +362,13 @@ a.color-accent {
 }
 a.color-accent:hover {
   color: #555555;
+}
+
+a.color-grey {
+  color: #B0B0B0;
+}
+a.color-grey:hover {
+  color: #FF0000;
 }
 
 .mb-30 {

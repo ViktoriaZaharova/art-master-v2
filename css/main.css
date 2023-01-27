@@ -771,6 +771,24 @@
   color: #FF0000;
 }
 
+.progress {
+  width: 100%;
+  background: #FAFAFA;
+  border-radius: 2px;
+  height: 5px;
+  position: relative;
+}
+
+.progress-bg {
+  background: #FF0000;
+  height: 100%;
+  border-radius: 2px;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
 .clients {
   margin: 0 0 52px;
 }
@@ -790,9 +808,7 @@
 .clients-box {
   width: 10%;
   padding: 0 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -808,6 +824,11 @@
 .clients-box:hover {
   -webkit-filter: none;
           filter: none;
+}
+.clients-box:nth-child(-n+30) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .btn-load {
