@@ -1,5 +1,16 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1440px) {
+  .btn-services {
+    margin: 0 auto 0 40px;
+  }
+  header .phone {
+    margin: 0 30px;
+  }
+  .btn-burger {
+    margin: 0 0 0 50px;
+  }
+}
 @media only screen and (min-width: 1300px) {
   .service-col {
     width: 20%;

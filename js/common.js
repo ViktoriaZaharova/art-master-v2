@@ -22,18 +22,18 @@ $('.btn-services').on('click', function (e) {
 	$('.services-dropdown').fadeToggle();
 });
 
-$(document).ready(function () {
-	$(".js-tab-trigger").hover(function () {
-		var id = $(this).attr('data-tab'),
-			content = $('.js-tab-content[data-tab="' + id + '"]');
+// $(document).ready(function () {
+// 	$(".js-tab-trigger").hover(function () {
+// 		var id = $(this).attr('data-tab'),
+// 			content = $('.js-tab-content[data-tab="' + id + '"]');
 
-		// $('.js-tab-trigger.active').removeClass('active'); // 1
-		$(this).addClass('active'); // 2
+// 		// $('.js-tab-trigger.active').removeClass('active'); // 1
+// 		$(this).addClass('active'); // 2
 
-		// $('.js-tab-content.active').removeClass('active'); // 3
-		content.addClass('active'); // 4
-	});
-});
+// 		// $('.js-tab-content.active').removeClass('active'); // 3
+// 		content.addClass('active'); // 4
+// 	});
+// });
 
 
 $(document).mouseup(function (e) { // событие клика по веб-документу
@@ -64,6 +64,11 @@ $('.advantages-slider').slick({
 	fade: true,
 	arrows: false,
 	dots: true,
+	autoplay: true,
+	autoplaySpeed: 2000,
+	verticalSwiping: true,
+	draggable: true,
+	swipeToSlide: true
 });
 
 $('.reviews-slider').slick({

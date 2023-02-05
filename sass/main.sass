@@ -198,16 +198,53 @@
 // advantages
 .advantages
 	position: relative
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/advantages-slide1.jpg') no-repeat center
-	background-size: cover
+	padding: 141px 0 100px
+	overflow: hidden
+	z-index: 1
+	.btn-group
+		padding: 0 0 0 65px
+		margin: 138px 0 0
+	.btn
+		margin: 0 48px 0 0
+		padding: 10px	45px
+		&:last-child
+			margin: 0
+	.btn-video
+		padding: 10px 20px
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))
+		width: 100%
+		height: 100%
+		z-index: -1
+
+.fullscreen-bg__video
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	margin: 0 auto
+	width: 100%
+	height: auto
+	z-index: -2
+	@include d-flex
+	iframe
+		width: 100%
+		height: 100%
+		object-fit: cover
+	
 
 .advantages-slider
+	padding: 0 0 0 65px
 	.slick-dots
 		position: absolute
 		flex-direction: column
 		align-items: flex-start
 		justify-content: flex-start
-		top: 160px
+		top: 15px
 		left: 0
 		li
 			margin: 0 0 27px 4px
@@ -221,8 +258,8 @@
 .advantages-slide
 	position: relative
 	z-index: 1
-	padding: 141px 0 100px
 	color: #fff
+	
 	&__bg
 		position: absolute
 		left: 50%
@@ -243,22 +280,10 @@
 			width: 100%
 			height: 100%
 			background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))
-	&__content
-		position: relative
-		z-index: 2
-		padding: 0 0 0 64px
 	.h2
 		max-width: 942px
-		margin: 0 0 138px
 		sup
-			font-size: 50px
-	.btn
-		margin: 0 48px 0 0
-		padding: 10px	45px
-		&:last-child
-			margin: 0
-	.btn-video
-		padding: 10px 20px
+			font-size: 46px
 
 .btn-video
 	&::after
@@ -368,10 +393,9 @@
 			background: $accent
 			color: #fff
 	.nav-item
-		margin: 0 14px 10px 0 
+		margin: 0 14px 10px 0
 		&:last-child
-			margin: 0 0 10px	
-
+			margin: 0 0 10px
 
 .portfolio-wrapper
 	width: 100%
@@ -439,12 +463,12 @@
 		strong
 			font-size: 96px
 			line-height: 122px
-			
+
 			display: block
 		span
 			display: block
 			font-size: 40px
-			line-height: 51px	
+			line-height: 51px
 			margin: -20px auto -24px
 		&:hover
 			color: $accent
@@ -464,7 +488,7 @@
 	margin: 0 0 66px
 	.slide
 		margin: 0 30px 0 0
-		width: 379px	
+		width: 379px
 
 .reviews-box
 	width: 100%
@@ -473,7 +497,7 @@
 	border: 1px solid #666666
 	border-radius: 5px
 	&:last-child
-		margin: 0	
+		margin: 0
 	&__head
 		width: 100%
 		display: flex
@@ -496,7 +520,7 @@
 		font-size: 20px
 	.position-user
 		font-weight: 300
-		margin: 3px 0 0		
+		margin: 3px 0 0
 	&__body
 		color: #666666
 		line-height: 24px
@@ -504,7 +528,7 @@
 		margin: 15px 0 0
 	&__details
 		font-weight: 300
-		font-size: 14px			
+		font-size: 14px
 
 .link-site
 	color: #000000
@@ -526,7 +550,7 @@
 	border-radius: 2px
 	left: 0
 	top: 0
-	transition: .5s ease					
+	transition: .5s ease
 // reviews end
 
 // clients
@@ -552,11 +576,8 @@
 		filter: none
 	&:nth-child(-n+30)
 		display: flex
-			
 
 .btn-load
 	margin: 16px auto 0
 	padding: 8.5px 26px
-	font-size: 14px			
-
-	
+	font-size: 14px
