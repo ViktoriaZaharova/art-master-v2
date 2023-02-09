@@ -105,7 +105,7 @@ setProgress(0);
 // show list all
 $('.btn-load').on('click', function (e) {
 	e.preventDefault();
-	$(this).prev('.clients-wrapper').find('.clients-box:hidden').slice(0, 10).slideDown();
+	$(this).prev('.clients-wrapper').find('.clients-box:hidden').slice(0, 10).fadeIn();
 
 	var onBlock = $(this).prev('.clients-wrapper').find('.clients-box:hidden').length;
 	if (onBlock <= 0) {
