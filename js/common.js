@@ -59,16 +59,58 @@ $('.home-slider-nav').slick({
 	asNavFor: '.home-slider'
 });
 
+
+
+
+var block_show = null;
+
+function scrollTracking() {
+	var wt = $(window).scrollTop();
+	var wh = $(window).height();
+	var et = $('.advantages').offset().top;
+	var eh = $('.advantages').outerHeight();
+
+	if (et >= wt && et + eh <= wh + wt) {
+		if (block_show == null || block_show == false) {
+			$('body').addClass('no-scroll');
+		}
+		block_show = true;
+	}
+	else {
+		if (block_show == null || block_show == true) {
+			$('body').removeClass('no-scroll');
+		}
+		block_show = false;
+	}
+}
+
+$(window).scroll(function () {
+	scrollTracking();
+});
+
+$(document).ready(function () {
+	scrollTracking();
+});
+
+
 $('.advantages-slider').slick({
 	slidesToShow: 1,
 	fade: true,
+	// infinite: false,
 	arrows: false,
 	dots: true,
 	autoplay: true,
 	autoplaySpeed: 2000,
 	verticalSwiping: true,
 	draggable: true,
-	swipeToSlide: true
+	swipeToSlide: true,
+	pauseOnHover: false
+});
+
+$(".advantages-slider").on("afterChange", function (event) {
+	if ($(this).find('.slick-slide').last().hasClass('slick-current')) {
+		$('body').removeClass('no-scroll');
+	}
 });
 
 $('.reviews-slider').slick({
@@ -90,16 +132,11 @@ function setProgress(index) {
 
 var $slider = $('.reviews-slider');
 var $progressBar = $('.progress-bg');
-// const $progressBarLabel = $('.timeline__val');
 
 $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 	setProgress(nextSlide);
-	// $progressBarLabel.text(currentSlide + 1);
 });
 
-// $slider.on('afterChange', function (event, slick, currentSlide) {
-// 	$progressBarLabel.text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
-// });
 setProgress(0);
 
 // show list all

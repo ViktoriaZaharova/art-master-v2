@@ -76,6 +76,10 @@ body {
   color: #000;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
