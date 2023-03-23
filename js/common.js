@@ -22,19 +22,6 @@ $('.btn-services').on('click', function (e) {
 	$('.services-dropdown').fadeToggle();
 });
 
-// $(document).ready(function () {
-// 	$(".js-tab-trigger").hover(function () {
-// 		var id = $(this).attr('data-tab'),
-// 			content = $('.js-tab-content[data-tab="' + id + '"]');
-
-// 		// $('.js-tab-trigger.active').removeClass('active'); // 1
-// 		$(this).addClass('active'); // 2
-
-// 		// $('.js-tab-content.active').removeClass('active'); // 3
-// 		content.addClass('active'); // 4
-// 	});
-// });
-
 
 $(document).mouseup(function (e) { // событие клика по веб-документу
 	var div = $(".services-dropdown"); // тут указываем ID элемента
@@ -56,7 +43,32 @@ $('.home-slider-nav').slick({
 	infinite: false,
 	arrows: false,
 	focusOnSelect: true,
-	asNavFor: '.home-slider'
+	asNavFor: '.home-slider',
+	responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 3,
+				infinite: true,
+			}
+		},
+		{
+			breakpoint: 820,
+			settings: {
+				slidesToShow: 2,
+				infinite: true,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 2000,
+			}
+		}
+	]
 });
 
 
@@ -96,7 +108,6 @@ $(document).ready(function () {
 $('.advantages-slider').slick({
 	slidesToShow: 1,
 	fade: true,
-	// infinite: false,
 	arrows: false,
 	dots: true,
 	autoplay: true,
