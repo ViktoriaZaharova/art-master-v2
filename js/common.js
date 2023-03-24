@@ -170,4 +170,14 @@ $('.btn-load').on('click', function (e) {
 		$(this).hide();
 	}
 });
+
+$('.btn-load').on('click', function (e) {
+	e.preventDefault();
+	$(this).parents('.page-blog').find('.blog-col:hidden').slice(0, 3).fadeIn();
+
+	var onBlock = $(this).parents('.page-blog').find('.blog-col:hidden').length;
+	if (onBlock <= 0) {
+		$(this).hide();
+	}
+});
 	// show list all

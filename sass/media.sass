@@ -1,6 +1,9 @@
 /*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 2000px)
+	.contacts-map
+		min-width: auto		
 @media only screen and (max-width: 1690px)
 	.h1
 		font-size: 64px
@@ -56,6 +59,8 @@
 			font-size: 50px
 		h3
 			font-size: 28px
+
+	
 
 @media only screen and (max-width: 1310px)
 	.h1, .h2
@@ -175,7 +180,26 @@
 			font-size: 45px
 		h3
 			font-size: 24px
-			margin: 20px 0 30px			
+			margin: 20px 0 30px	
+			
+	.contacts-map
+		height: 300px
+		
+	.page-contacts
+		&__content		
+			margin: 0 0 30px
+		h1
+			font-size: 55px
+		.schedule
+			margin: 20px 0 30px
+		.cooperation-box
+			margin: 30px 0 0
+		.list-social
+			margin: 30px 0 0		
+
+	.h1-title
+		font-size: 50px
+									
 
 @media only screen and (max-width: 992px)
 	.company-wrapper
@@ -353,6 +377,13 @@
 	.video-preview
 		margin: 50px auto 0	
 
+	.h1-title
+		font-size: 40px	
+
+	.sorting-wrapper
+		justify-content: flex-start
+		margin: 10px 0 0	
+
 @media only screen and (max-width: 650px)
 	header
 		.btn-callback
@@ -502,7 +533,31 @@
 			font-size: 30px
 
 	.portfolio-gallery
-		width: 50%		
+		width: 50%	
+
+	.page-contacts 
+		h1
+			font-size: 40px
+			margin: 0 0 20px
+		.list-social
+			margin: 20px auto 0
+			justify-content: center
+		.cooperation-box__bottom
+			margin: 20px 0 0
+		.contacts-box
+			font-size: 20px					
+
+	.h1-title
+		font-size: 30px
+
+	.blog-card
+		&__img
+			height: 280px
+		&__body
+			height: calc(100% - 280px)
+			padding: 20px
+		&__title
+			font-size: 18px		
 
 @media only screen and (max-width: 480px)
 	.logo

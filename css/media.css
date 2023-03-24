@@ -1,5 +1,10 @@
 /*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 2000px) {
+  .contacts-map {
+    min-width: auto;
+  }
+}
 @media only screen and (max-width: 1690px) {
   .h1 {
     font-size: 64px;
@@ -179,6 +184,27 @@
   .page-portfolio-home h3 {
     font-size: 24px;
     margin: 20px 0 30px;
+  }
+  .contacts-map {
+    height: 300px;
+  }
+  .page-contacts__content {
+    margin: 0 0 30px;
+  }
+  .page-contacts h1 {
+    font-size: 55px;
+  }
+  .page-contacts .schedule {
+    margin: 20px 0 30px;
+  }
+  .page-contacts .cooperation-box {
+    margin: 30px 0 0;
+  }
+  .page-contacts .list-social {
+    margin: 30px 0 0;
+  }
+  .h1-title {
+    font-size: 50px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -367,6 +393,15 @@
   .video-preview {
     margin: 50px auto 0;
   }
+  .h1-title {
+    font-size: 40px;
+  }
+  .sorting-wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 10px 0 0;
+  }
 }
 @media only screen and (max-width: 650px) {
   header .btn-callback {
@@ -529,6 +564,35 @@
   }
   .portfolio-gallery {
     width: 50%;
+  }
+  .page-contacts h1 {
+    font-size: 40px;
+    margin: 0 0 20px;
+  }
+  .page-contacts .list-social {
+    margin: 20px auto 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .page-contacts .cooperation-box__bottom {
+    margin: 20px 0 0;
+  }
+  .page-contacts .contacts-box {
+    font-size: 20px;
+  }
+  .h1-title {
+    font-size: 30px;
+  }
+  .blog-card__img {
+    height: 280px;
+  }
+  .blog-card__body {
+    height: calc(100% - 280px);
+    padding: 20px;
+  }
+  .blog-card__title {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 480px) {

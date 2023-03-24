@@ -287,6 +287,19 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   border-color: #FF0000;
 }
 
+.btn-border-grey {
+  border: 1px solid #666;
+  color: #333;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 7px 10px;
+}
+.btn-border-grey:hover {
+  background: #FF0000;
+  color: #fff;
+  border-color: #FF0000;
+}
+
 .btn-icon-arrow {
   fill: none;
   stroke: #FF0000;
@@ -351,6 +364,11 @@ h1 {
   margin: 0 0 70px;
 }
 
+.h1-title {
+  font-size: 64px;
+  margin: 0;
+}
+
 h2 {
   text-transform: uppercase;
   font-size: 36px;
@@ -397,6 +415,10 @@ a.color-grey:hover {
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 .mb-100 {
@@ -521,4 +543,40 @@ a.color-grey:hover {
   font-size: 18px;
   line-height: 24px;
   text-align: justify;
+}
+
+.sorting-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 16px;
+}
+.sorting-wrapper p {
+  margin: 0 20px 0 0;
+}
+
+.select {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  height: 33px;
+  padding: 0 60px 0 14px;
+  color: #666666;
+  font-size: 14px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../img/arrow-select.svg") no-repeat calc(100% - 15px) center;
+  background-size: 15px;
 }
