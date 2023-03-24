@@ -51,6 +51,12 @@
   .page-service .list-checkbox li {
     margin: 0 0 12px;
   }
+  .page-portfolio-home h1 {
+    font-size: 50px;
+  }
+  .page-portfolio-home h3 {
+    font-size: 28px;
+  }
 }
 @media only screen and (max-width: 1310px) {
   .h1, .h2 {
@@ -167,6 +173,13 @@
   .page-service h1 {
     font-size: 80px;
   }
+  .page-portfolio-home h1 {
+    font-size: 45px;
+  }
+  .page-portfolio-home h3 {
+    font-size: 24px;
+    margin: 20px 0 30px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .company-wrapper {
@@ -273,6 +286,15 @@
   .description-product .unique-sings__content {
     padding: 0;
   }
+  .page-portfolio__image, .stages-portfolio__image {
+    margin: 30px 0 0;
+  }
+  .page-portfolio-home h1 {
+    font-size: 35px;
+  }
+  .page-portfolio-home h3 {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .search-wrapper .form-search {
@@ -341,6 +363,9 @@
   }
   .page-portfolio h1 {
     font-size: 60px;
+  }
+  .video-preview {
+    margin: 50px auto 0;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -476,6 +501,34 @@
   }
   .unique-sings h2 {
     font-size: 30px;
+  }
+  .description-text {
+    font-size: 16px;
+    text-align: left;
+  }
+  .stages-portfolio {
+    margin: 0 0 50px;
+  }
+  .stages-portfolio h3 {
+    font-size: 24px;
+    margin: 0 0 30px;
+  }
+  .stages-portfolio h4 {
+    font-size: 18px;
+    margin: 0 0 20px;
+  }
+  .stages-portfolio .box-text p {
+    margin: 0 0 20px;
+  }
+  .video-preview::after {
+    width: 70px;
+    height: 70px;
+  }
+  .page-portfolio-home h1 {
+    font-size: 30px;
+  }
+  .portfolio-gallery {
+    width: 50%;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -617,6 +670,13 @@
   }
   .page-service {
     padding: 60px 0 70px;
+  }
+  .video-preview::after {
+    width: 50px;
+    height: 50px;
+  }
+  .portfolio-gallery {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 370px) {

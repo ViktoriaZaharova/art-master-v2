@@ -516,3 +516,9 @@ a.color-grey:hover {
   min-width: 31px;
   margin: 0 18px 0 0;
 }
+
+.description-text {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+}
