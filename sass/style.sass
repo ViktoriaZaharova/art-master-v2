@@ -46,11 +46,11 @@ body
 	background: #fff
 	color: #000
 
-.no-scroll
-	overflow-y: hidden 
+// html, body
+// 	overflow-x: hidden	
 
-html, body
-	overflow-x: hidden	
+.no-scroll
+	overflow-y: hidden
 
 img
 	display: block
@@ -150,14 +150,14 @@ button, .btn
 		background: $hover
 		color: #fff
 	.btn-icon
-		fill: #fff	
+		fill: #fff
 	.btn-icon-arrow
 		stroke: #fff
 		width: 16px
-		height: 8px	
+		height: 8px
 
 .btn-icon
-	@include d-flex		
+	@include d-flex
 
 .btn-grey
 	background: $hover
@@ -172,7 +172,7 @@ button, .btn
 	font-weight: 300
 	&:hover
 		background: $hover
-		color: #fff				
+		color: #fff
 
 .btn-border-accent
 	border: 1px solid $accent
@@ -181,7 +181,7 @@ button, .btn
 		background: $accent
 		color: #fff
 		.btn-icon-arrow
-			stroke: #fff		
+			stroke: #fff
 
 .btn-border-white
 	border: 1px solid #fff
@@ -197,13 +197,13 @@ button, .btn
 	stroke: $accent
 	width: 7px
 	height: 14px
-	margin: 0 0 0 10px	
+	margin: 0 0 0 10px
 
 .btn-group
 	flex-wrap: wrap
 
 .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle), .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn
-	border-radius: 5px			
+	border-radius: 5px
 
 .svg-icon
 	width: 100%
@@ -230,6 +230,13 @@ ul, ol
 	font-weight: bold
 	font-size: 74px
 
+h1
+	width: 100%
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 32px
+	margin: 0 0 70px
+
 h2
 	text-transform: uppercase
 	font-size: 36px
@@ -240,16 +247,16 @@ h2
 .h2
 	font-size: 64px
 	font-weight: bold
-	text-transform: uppercase	
+	text-transform: uppercase
 
 .container
-	max-width: 1765px	
+	max-width: 1765px
 	padding: 0 15px
 
 .row
 	margin: 0 -15px
 	>*
-		padding: 0 15px	
+		padding: 0 15px
 
 .color-accent
 	color: $accent
@@ -257,7 +264,7 @@ h2
 a.color-accent
 	color: $accent
 	&:hover
-		color: $hover	
+		color: $hover
 
 a.color-grey
 	color: #B0B0B0
@@ -265,7 +272,10 @@ a.color-grey
 		color: $accent
 
 .mb-30
-	margin-bottom: 30px		
+	margin-bottom: 30px
+
+.mb-100
+	margin-bottom: 100px	
 
 // slick slider	
 .slick-slider
@@ -288,36 +298,84 @@ a.color-grey
 		border-radius: 50%
 		border: 1px solid #fff
 		button
-			display: none	
+			display: none
 	.slick-active
 		background: #fff
 		width: 13px
-		height: 13px		
+		height: 13px
 
 //checkbox my
-.label-checkbox
-	position: relative
-	display: flex
-	align-items: flex-start
-	color: rgba(255, 255, 255, 0.5)
-	font-size: 14px
-	margin: 15px 0 0
-	line-height: 1.14
+// .label-checkbox
+// 	position: relative
+// 	display: flex
+// 	align-items: flex-start
+// 	color: rgba(255, 255, 255, 0.5)
+// 	font-size: 14px
+// 	margin: 15px 0 0
+// 	line-height: 1.14
 
-.inp-check
-	display: none
+// .inp-check
+// 	display: none
 
-.checkbox-custom
-	margin: 0 12px 0 0
-	position: relative
-	border-radius: 6px
-	background-color: #fff
-	width: 16px
-	height: 16px
-	min-width: 16px
-	cursor: pointer
+// .checkbox-custom
+// 	margin: 0 12px 0 0
+// 	position: relative
+// 	border-radius: 6px
+// 	background-color: #fff
+// 	width: 16px
+// 	height: 16px
+// 	min-width: 16px
+// 	cursor: pointer
 
-.inp-check:checked ~ .checkbox-custom
-	background: #fff url("../img/check-black.svg") no-repeat center
-	background-size: 8px
+// .inp-check:checked ~ .checkbox-custom
+// 	background: #fff url("../img/check-black.svg") no-repeat center
+// 	background-size: 8px
 //checkbox my end
+
+.page
+	padding: 85px 0 0
+
+.nav-breadcrumb
+	margin: 19px 0 15px
+
+.breadcrumb
+	padding: 0
+	border: none
+	font-size: 12px
+	border-radius: 0
+	a
+		color: #C0C0C0
+		&:hover
+			color: $accent
+
+.breadcrumb-item
+	display: flex
+	align-items: center
+
+.breadcrumb-item+.breadcrumb-item
+	padding-left: 0
+	&::before
+		padding: 0
+		margin: 0 5px
+		content: '>'
+		color: #C0C0C0	
+
+.breadcrumb-item.active
+	color: #C0C0C0
+
+.list-checkbox
+	font-size: 18px
+	li
+		display: flex
+		align-items: center
+		margin: 0 0 12px
+
+		&::before
+			content: ''
+			@include d-flex
+			background: url('../img/check.svg') no-repeat center
+			background-size: cover
+			width: 31px
+			height: 31px
+			min-width: 31px
+			margin: 0 18px 0 0	

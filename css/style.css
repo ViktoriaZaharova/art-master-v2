@@ -80,10 +80,6 @@ body {
   overflow-y: hidden;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -347,6 +343,14 @@ ul, ol {
   font-size: 74px;
 }
 
+h1 {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0 0 70px;
+}
+
 h2 {
   text-transform: uppercase;
   font-size: 36px;
@@ -395,6 +399,10 @@ a.color-grey:hover {
   margin-bottom: 30px;
 }
 
+.mb-100 {
+  margin-bottom: 100px;
+}
+
 .slick-slider {
   width: 100%;
 }
@@ -434,36 +442,77 @@ a.color-grey:hover {
   height: 13px;
 }
 
-.label-checkbox {
-  position: relative;
+.page {
+  padding: 85px 0 0;
+}
+
+.nav-breadcrumb {
+  margin: 19px 0 15px;
+}
+
+.breadcrumb {
+  padding: 0;
+  border: none;
+  font-size: 12px;
+  border-radius: 0;
+}
+.breadcrumb a {
+  color: #C0C0C0;
+}
+.breadcrumb a:hover {
+  color: #FF0000;
+}
+
+.breadcrumb-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  margin: 15px 0 0;
-  line-height: 1.14;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.inp-check {
-  display: none;
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  padding: 0;
+  margin: 0 5px;
+  content: ">";
+  color: #C0C0C0;
 }
 
-.checkbox-custom {
-  margin: 0 12px 0 0;
-  position: relative;
-  border-radius: 6px;
-  background-color: #fff;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  cursor: pointer;
+.breadcrumb-item.active {
+  color: #C0C0C0;
 }
 
-.inp-check:checked ~ .checkbox-custom {
-  background: #fff url("../img/check-black.svg") no-repeat center;
-  background-size: 8px;
+.list-checkbox {
+  font-size: 18px;
+}
+.list-checkbox li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 12px;
+}
+.list-checkbox li::before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../img/check.svg") no-repeat center;
+  background-size: cover;
+  width: 31px;
+  height: 31px;
+  min-width: 31px;
+  margin: 0 18px 0 0;
 }
