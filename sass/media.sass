@@ -3,13 +3,17 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 2000px)
 	.contacts-map
-		min-width: auto		
+		min-width: auto
+
 @media only screen and (max-width: 1690px)
 	.h1
 		font-size: 64px
 
 	.footer-box
 		padding: 0 0 0 20px
+
+	.principles-image::before
+		width: 100%
 
 @media only screen and (max-width: 1520px)
 	.btn-services, .btn-burger
@@ -36,6 +40,11 @@
 		max-width: 650px
 		right: 20px
 
+	.principles-image
+		margin: 0
+		&::before
+			left: 0
+
 @media only screen and (max-width: 1440px)
 	.btn-services
 		margin: 0 auto 0 40px
@@ -60,7 +69,16 @@
 		h3
 			font-size: 28px
 
-	
+@media only screen and (max-width: 1400px)
+	.advantaes-about__image
+		margin: 0 0 0 auto
+
+	.principles-image::before
+		display: none
+
+	.principles .box-text
+		margin: 0 0 30px
+
 
 @media only screen and (max-width: 1310px)
 	.h1, .h2
@@ -96,6 +114,15 @@
 	.unique-sings
 		h2
 			font-size: 55px
+
+	.w377, .w379, .w513
+		width: 50%
+
+	.page-reviews .reviews-box
+		margin: 0 0 20px
+
+	.grid-wrapper
+		max-height: 900px
 
 @media only screen and (max-width: 1200px)
 	.company-wrapper
@@ -180,13 +207,13 @@
 			font-size: 45px
 		h3
 			font-size: 24px
-			margin: 20px 0 30px	
-			
+			margin: 20px 0 30px
+
 	.contacts-map
 		height: 300px
-		
+
 	.page-contacts
-		&__content		
+		&__content
 			margin: 0 0 30px
 		h1
 			font-size: 55px
@@ -195,11 +222,39 @@
 		.cooperation-box
 			margin: 30px 0 0
 		.list-social
-			margin: 30px 0 0		
+			margin: 30px 0 0
 
 	.h1-title
 		font-size: 50px
-									
+
+	.page-reviews .reviews-box__body
+		font-size: 14px
+		text-align: left
+
+	.w377, .w379, .w513
+		width: 100%
+
+	.principles
+		.box-text
+			max-width: none
+		h2
+			max-width: none
+
+	.principles-image
+		margin: 0 auto
+		
+	.advantaes-about
+		margin: 40px 0 0
+		&__image
+			margin: 0 auto
+
+	.advantaes-about-box							
+		margin: 0 0 30px
+
+	.team
+		margin: 0 0 70px
+		.nav-tabs
+			margin: 20px 0	
 
 @media only screen and (max-width: 992px)
 	.company-wrapper
@@ -299,11 +354,25 @@
 	.page-portfolio__image, .stages-portfolio__image
 		margin: 30px 0 0
 
-	.page-portfolio-home 
+	.page-portfolio-home
 		h1
 			font-size: 35px
 		h3
-			font-size: 20px			
+			font-size: 20px
+
+	.unique-manufacturer
+		.unique-sings__content
+			padding: 0
+		h3
+			font-size: 28px
+			text-align: left
+		.unique-sings__image
+			min-width: auto
+
+	.advantages-manufacturer
+		margin: 0 0 60px
+		h2
+			margin: 0 0 30px
 
 @media only screen and (max-width: 800px)
 	.search-wrapper .form-search
@@ -375,14 +444,23 @@
 		font-size: 60px
 
 	.video-preview
-		margin: 50px auto 0	
+		margin: 50px auto 0
 
 	.h1-title
-		font-size: 40px	
+		font-size: 40px
 
 	.sorting-wrapper
 		justify-content: flex-start
-		margin: 10px 0 0	
+		margin: 10px 0 0
+
+	.advantages-manufacturer-box
+		padding: 20px
+		.number
+			font-size: 60px
+			line-height: 1
+
+	.page-service h1
+		font-size: 60px
 
 @media only screen and (max-width: 650px)
 	header
@@ -516,26 +594,28 @@
 		h3
 			font-size: 24px
 			margin: 0 0 30px
+			sup
+				font-size: 18px
 		h4
 			font-size: 18px
 			margin: 0 0 20px
 		.box-text
 			p
-				margin: 0 0 20px	
+				margin: 0 0 20px
 
 	.video-preview
 		&::after
 			width: 70px
 			height: 70px
 
-	.page-portfolio-home 
+	.page-portfolio-home
 		h1
 			font-size: 30px
 
 	.portfolio-gallery
-		width: 50%	
+		width: 50%
 
-	.page-contacts 
+	.page-contacts
 		h1
 			font-size: 40px
 			margin: 0 0 20px
@@ -545,7 +625,7 @@
 		.cooperation-box__bottom
 			margin: 20px 0 0
 		.contacts-box
-			font-size: 20px					
+			font-size: 20px
 
 	.h1-title
 		font-size: 30px
@@ -557,7 +637,17 @@
 			height: calc(100% - 280px)
 			padding: 20px
 		&__title
-			font-size: 18px		
+			font-size: 18px
+
+	.manufacturer-box
+		margin: 0 0 50px
+
+	.unique-manufacturer
+		h3
+			font-size: 24px
+
+	.team-box__photo
+		height: auto		
 
 @media only screen and (max-width: 480px)
 	.logo
@@ -693,10 +783,19 @@
 	.video-preview
 		&::after
 			width: 50px
-			height: 50px	
+			height: 50px
 
 	.portfolio-gallery
-		width: 100%		
+		width: 100%
+
+	.page-service h1
+		font-size: 30px
+
+	h2
+		font-size: 26px
+
+	.advantages-manufacturer-box
+		font-size: 16px
 
 @media only screen and (max-width: 370px)
 	.modal-title

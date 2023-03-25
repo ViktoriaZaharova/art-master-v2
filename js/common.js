@@ -180,4 +180,10 @@ $('.btn-load').on('click', function (e) {
 		$(this).hide();
 	}
 });
-	// show list all
+
+$('.btn-load-reviews').click(function (e) {
+	e.preventDefault();
+	$('.grid-wrapper').addClass('open');
+	$(this).hide();
+});
+// show list all
