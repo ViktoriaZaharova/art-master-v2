@@ -201,7 +201,7 @@ button, .btn
 	&:hover
 		background: $accent
 		color: #fff
-		border-color: $accent		
+		border-color: $accent
 
 .btn-icon-arrow
 	fill: none
@@ -249,7 +249,7 @@ h1
 	margin: 0 0 70px
 
 .h1-title
-	font-size: 64px	
+	font-size: 64px
 	margin: 0
 
 h2
@@ -286,14 +286,17 @@ a.color-grey
 	&:hover
 		color: $accent
 
+.mb-20
+	margin-bottom: 20px		
+
 .mb-30
 	margin-bottom: 30px
 
 .mb-40
-	margin-bottom: 40px	
+	margin-bottom: 40px
 
 .mb-100
-	margin-bottom: 100px	
+	margin-bottom: 100px
 
 // slick slider	
 .slick-slider
@@ -321,6 +324,83 @@ a.color-grey
 		background: #fff
 		width: 13px
 		height: 13px
+
+.slick-arrow
+	position: absolute
+	top: 50%
+	transform: translate(0,-50%)
+	background: transparent
+	border: none
+	border-radius: 0
+	padding: 0
+	fill: none
+	width: 14px
+	height: 29px
+	stroke: $accent
+	z-index: 1
+
+.slick-next
+	right: -10px
+
+.slick-prev
+	left: -20px
+	svg
+		transform: rotate(180deg)
+
+.slick-disabled
+	opacity: 0
+
+.tooltip-wrapper
+	position: relative
+	width: fit-content
+	z-index: 3
+	display: flex
+	align-items: center
+	flex-direction: column
+	&:hover
+		.tooltip-box
+			display: block
+	&:before
+		content: ''
+		width: 2px
+		height: 24px
+		background: #FF0000
+		@include d-flex
+		margin: 0 0 6px
+
+.tooltip-btn
+	@include d-flex
+	width: 27px
+	height: 27px
+	border: 1px solid $accent
+	border-radius: 50%
+	color: $accent
+	font-size: 20px
+
+.tooltip-box
+	display: none
+	position: absolute
+	z-index: 4
+	left: 50%
+	transform: translate(-50%,0)
+	margin: 0 0 10px
+	bottom: 100%
+	background: #fff
+	padding: 10px
+	font-size: 12px
+	border-radius: 3px
+	min-width: 250px
+	max-width: 250px
+	box-shadow: 0 0 10px rgba(#000, .1)
+	&::before
+		content: ''
+		position: absolute
+		border-top: 8px solid #fff
+		border-left: 5px solid transparent
+		border-right: 5px solid transparent
+		left: 50%
+		transform: translate(-50%,0)
+		bottom: -8px
 
 //checkbox my
 // .label-checkbox
@@ -376,7 +456,7 @@ a.color-grey
 		padding: 0
 		margin: 0 5px
 		content: '>'
-		color: #C0C0C0	
+		color: #C0C0C0
 
 .breadcrumb-item.active
 	color: #C0C0C0
@@ -396,11 +476,11 @@ a.color-grey
 			width: 31px
 			height: 31px
 			min-width: 31px
-			margin: 0 18px 0 0	
+			margin: 0 18px 0 0
 
 .description-text
 	font-size: 18px
-	line-height: 24px			
+	line-height: 24px
 	text-align: justify
 
 .sorting-wrapper

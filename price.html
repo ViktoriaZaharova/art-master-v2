@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арт-мастер - производство наружной рекламы</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/fancybox.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="mobile-menu">
+		<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+		<ul class="menu my-ul">
+			<li><a href="catalog.html">Каталог</a></li>
+			<li><a href="portfolio.html">Портфолио</a></li>
+			<li><a href="prices.html">Цены</a></li>
+			<li><a href="about.html">О компании</a></li>
+			<li><a href="manufacturer.html">О производстве</a></li>
+			<li><a href="blog.html">Блог</a></li>
+			<li><a href="contacts.html">Контакты</a></li>
+		</ul>
+
+		<ul class="submenu my-ul">
+			<li><a href="#">Таблички</a></li>
+			<li><a href="#">Выставочные и <br>рекламные стенды</a></li>
+			<li><a href="#">Наружная реклама</a></li>
+			<li><a href="#">Дизайн и фирменные стиль</a></li>
+			<li><a href="#">Печать</a></li>
+			<li><a href="#">Другие услуги</a></li>
+		</ul>
+
+		<a href="#" class="btn btn-md btn-accent btn-callback" data-bs-toggle="modal"
+			data-bs-target="#callbackModal">связаться со мной</a>
+		<div class="phones">
+			<a href="tel:+78412458108" class="phone">8 8412 45 81 08</a>
+			<a href="tel:+78412292659" class="phone">8 8412 29 26 59</a>
+		</div>
+		<ul class="list-social my-ul">
+			<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+			<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+			<li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+			<li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+		</ul>
+	</div>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+					<a href="#" class="btn btn-sm btn-accent btn-services">
+						<span class="btn-icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#burger"></use>
+							</svg></span>
+						<span class="btn-text">услуги</span>
+					</a>
+
+					<nav class="nav-menu">
+						<ul class="menu my-ul">
+							<li><a href="portfolio.html">портфолио</a></li>
+							<li><a href="prices.html">цены</a></li>
+							<li><a href="about.html">о компании</a></li>
+							<li><a href="contacts.html">контакты</a></li>
+						</ul>
+					</nav>
+
+					<div class="search-wrapper">
+						<a href="#" class="btn-search">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg>
+						</a>
+
+						<form method="post" class="form-search">
+							<label><input type="text" placeholder="" name="search"></label>
+							<button type="submit">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+
+					<a href="tel:+78412458108" class="phone">8 (8412) 45 81 08</a>
+
+					<a href="#" class="btn btn-sm btn-accent btn-callback" data-bs-toggle="modal"
+						data-bs-target="#callbackModal">оставить заявку</a>
+
+					<a href="#" class="btn-burger">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg>
+					</a>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="services-dropdown">
+			<div class="services-dropdown-row">
+				<div class="services-dropdown-main">
+					<div class="services-dropdown__col">
+						<div class="services-dropdown-box">
+							<div class="services-dropdown-box__head">
+								<div class="services-dropdown-box__icon"><img src="img/menu-icon1.svg" alt=""></div>
+								<h3>Таблички</h3>
+							</div>
+							<div class="services-dropdown-box__body">
+								<ul class="services-dropdown-menu my-ul">
+									<li><a href="#">Металлические</a></li>
+									<li><a href="#">Пластиковые</a></li>
+									<li><a href="#">Навигационные (для ТЦ)</a></li>
+									<li><a href="#">Информационные</a></li>
+									<li><a href="#">Дверные</a></li>
+									<li><a href="#">Адресные</a></li>
+									<li><a href="#">Офисные</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="services-dropdown-box">
+							<div class="services-dropdown-box__head">
+								<div class="services-dropdown-box__icon"><img src="img/menu-icon2.svg" alt=""></div>
+								<h3>Выставочные и рекламные стенды</h3>
+							</div>
+							<div class="services-dropdown-box__body">
+								<ul class="services-dropdown-menu my-ul">
+									<li><a href="#">Бренд-зоны</a></li>
+									<li><a href="#">Рекламные стойки</a></li>
+									<li><a href="#">Пресс-воллы</a></li>
+									<li><a href="#">Ростовые фигуры</a></li>
+									<li><a href="#">Информационные стенды</a></li>
+									<li><a href="#">Ролл-апы</a></li>
+									<li><a href="#">Штендеры</a></li>
+									<li><a href="#">Пилоны</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<a href="services.html" class="btn btn-md btn-accent">все услуги</a>
+					</div>
+
+					<div class="services-dropdown__col">
+						<div class="services-dropdown-box">
+							<div class="services-dropdown-box__head">
+								<div class="services-dropdown-box__icon"><img src="img/menu-icon3.svg" alt=""></div>
+								<h3>Наружная реклама</h3>
+							</div>
+							<div class="services-dropdown-box__body">
+								<ul class="services-dropdown-menu my-ul">
+									<li class="js-tab-trigger">
+										<a href="#">Вывески</a>
+
+										<div class="services-dropdown__col menu-col-dropdown">
+											<ul class="menu-col-dropdown__list my-ul">
+												<li class="js-tab-trigger">
+													<a href="#">Вывески с объемными буквами</a>
+
+													<div class="services-dropdown__col menu-col-dropdown">
+														<ul class="menu-col-dropdown__list my-ul">
+															<li class="js-tab-trigger">
+																<a href="#">Из металла</a>
+
+																<div class="services-dropdown__col menu-col-dropdown menu-col-dropdown-last">
+																	<ul class="menu-col-dropdown__list my-ul">
+																		<li><a href="#">Металлические</a></li>
+																		<li><a href="#">Из нержавеющей стали</a></li>
+																	</ul>
+																</div>
+															</li>
+
+															<li><a href="#">Композитные</a></li>
+															<li><a href="#">На металлическом каркасе</a></li>
+															<li><a href="#">Интерьерные</a></li>
+															<li><a href="#">С неоновой подсветкой</a></li>
+															<li><a href="#">С открытой светодиодной подсветкой</a></li>
+															<li><a href="#">Видеовывески</a></li>
+														</ul>
+													</div>
+												</li>
+
+												<li><a href="#">Неоновые вывески</a></li>
+												<li><a href="#">Световые короба</a></li>
+												<li><a href="#">Вывески без подсветки</a></li>
+											</ul>
+										</div>
+									</li>
+
+									<li><a href="#">Вывески в рассрочку</a></li>
+									<li><a href="#">Крышные рекламные установки</a></li>
+									<li><a href="#">Оформление витрин</a></li>
+									<li><a href="#">Стеллы</a></li>
+									<li><a href="#">Входные группы</a></li>
+									<li class="js-tab-trigger"><a href="#">Брендирование транспорта</a>
+										<div class="services-dropdown__col menu-col-dropdown">
+											<ul class="menu-col-dropdown__list my-ul">
+												<li class="js-tab-trigger">
+													<a href="#">Из металла</a>
+
+													<div class="services-dropdown__col menu-col-dropdown menu-col-dropdown-last">
+														<ul class="menu-col-dropdown__list my-ul">
+															<li><a href="#">Металлические</a></li>
+															<li><a href="#">Из нержавеющей стали</a></li>
+														</ul>
+													</div>
+												</li>
+
+												<li><a href="#">Композитные</a></li>
+												<li><a href="#">На металлическом каркасе</a></li>
+												<li><a href="#">Интерьерные</a></li>
+												<li><a href="#">С неоновой подсветкой</a></li>
+												<li><a href="#">С открытой светодиодной подсветкой</a></li>
+												<li><a href="#">Видеовывески</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="services-dropdown-box">
+							<div class="services-dropdown-box__head">
+								<div class="services-dropdown-box__icon"><img src="img/menu-icon4.svg" alt=""></div>
+								<h3>Дизайн и фирменные стиль</h3>
+							</div>
+							<div class="services-dropdown-box__body">
+								<ul class="services-dropdown-menu my-ul">
+									<li><a href="#">Дизайн</a></li>
+									<li><a href="#">Разработка Лого</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="services-dropdown-box">
+							<div class="services-dropdown-box__head">
+								<div class="services-dropdown-box__icon"><img src="img/menu-icon5.svg" alt=""></div>
+								<h3>Печать</h3>
+							</div>
+							<div class="services-dropdown-box__body">
+								<ul class="services-dropdown-menu my-ul">
+									<li><a href="#">Интерьерная печать</a></li>
+									<li><a href="#">Широкоформатная печать</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="services-dropdown-box">
+							<div class="services-dropdown-box__head">
+								<div class="services-dropdown-box__icon"><img src="img/menu-icon6.svg" alt=""></div>
+								<h3>Другие услуги</h3>
+							</div>
+							<div class="services-dropdown-box__body">
+								<ul class="services-dropdown-menu my-ul">
+									<li><a href="#">Монтаж</a></li>
+									<li><a href="#">Регистрация рекламы</a></li>
+									<li><a href="#">Сервисное обслуживание</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<section class="page page-price">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Калькулятор цен</li>
+						</ol>
+					</nav>
+				</div>
+
+				<div class="col-12">
+					<h1>Калькулятор цен</h1>
+				</div>
+				<div class="col-12">
+					<form method="post" class="calculate-form">
+						<div class="calculate-form-content">
+							<div class="calculate-form-content__row">
+								<h3>1. Выберите вид вывески</h3>
+
+								<div class="type-products">
+									<div class="slide">
+										<label class="label-radio label-radio-type">
+											<input type="radio" name="radio" checked>
+											<span class="label-radio__icon"></span>
+											<span class="label-radio__image"><img src="img/type1.png" alt=""></span>
+											<span class="label-radio__text">Световые буквы</span>
+										</label>
+									</div>
+									<div class="slide">
+										<label class="label-radio label-radio-type">
+											<input type="radio" name="radio">
+											<span class="label-radio__icon"></span>
+											<span class="label-radio__image"><img src="img/type2.png" alt=""></span>
+											<span class="label-radio__text">Световые короба</span>
+										</label>
+									</div>
+									<div class="slide">
+										<label class="label-radio label-radio-type">
+											<input type="radio" name="radio">
+											<span class="label-radio__icon"></span>
+											<span class="label-radio__image"><img src="img/type3.png" alt=""></span>
+											<span class="label-radio__text">Световые панели</span>
+										</label>
+									</div>
+									<div class="slide">
+										<label class="label-radio label-radio-type">
+											<input type="radio" name="radio">
+											<span class="label-radio__icon"></span>
+											<span class="label-radio__image"><img src="img/type4.png" alt=""></span>
+											<span class="label-radio__text">Световые консоли</span>
+										</label>
+									</div>
+									<div class="slide">
+										<label class="label-radio label-radio-type">
+											<input type="radio" name="radio">
+											<span class="label-radio__icon"></span>
+											<span class="label-radio__image"><img src="img/type5.png" alt=""></span>
+											<span class="label-radio__text">Гибкий неон</span>
+										</label>
+									</div>
+									<div class="slide">
+										<label class="label-radio label-radio-type">
+											<input type="radio" name="radio">
+											<span class="label-radio__icon"></span>
+											<span class="label-radio__image"><img src="img/type6.png" alt=""></span>
+											<span class="label-radio__text">Стенды и таблички</span>
+										</label>
+									</div>
+									<div class="slide">
+										<label class="label-radio label-radio-type">
+											<input type="radio" name="radio">
+											<span class="label-radio__icon"></span>
+											<span class="label-radio__image"><img src="img/type7.png" alt=""></span>
+											<span class="label-radio__text">Крышные установки</span>
+										</label>
+									</div>
+									<div class="slide">
+										<label class="label-radio label-radio-type">
+											<input type="radio" name="radio">
+											<span class="label-radio__icon"></span>
+											<span class="label-radio__image"><img src="img/type1.png" alt=""></span>
+											<span class="label-radio__text">Световые буквы</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="calculate-form-content__row">
+								<div class="row">
+									<div class="col-12 col-lg-5 mb-20">
+										<h3>2. Выведите текст вывески</h3>
+
+										<label>
+											<input type="text" placeholder="Например, Продукты" name="name_product">
+										</label>
+									</div>
+									<div class="col-12 col-lg-7">
+										<h3>3. Выберите высоту <br>буквы (см)</h3>
+
+										<div class="slider-range-wrapper">
+											<div class="slider-wrapper">
+												<div class="slider slider1">
+													<div class="ui-slider-handle custom-handle custom-handle1"><span></span></div>
+												</div>
+
+												<div class="tooltip-wrapper">
+													<div class="tooltip-btn">?</div>
+													<div class="tooltip-box">
+														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam aliquid deserunt
+															praesentium quisquam quae et commodi. Amet ad ut totam voluptatem, dignissimos recusandae
+															rerum, enim dolore adipisci veniam quasi!</p>
+													</div>
+												</div>
+												<div class="slider-scale">
+													<p>0</p>
+													<p>200</p>
+												</div>
+											</div>
+											<div class="slider-range-value">
+												<p>Ввести вручную</p>
+												<label>
+													<input type="text" value="100" class="slider-input1">
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="calculate-form-content__row">
+								<h3>4. Дополнительные параметры</h3>
+
+								<ul class="list-radio my-ul">
+									<li>
+										<label class="label-radio">
+											<input type="radio" name="radio1">
+											<span class="label-radio__icon"></span>
+											<span class="label-radio__text">Композит</span>
+										</label>
+									</li>
+
+									<li>
+										<label class="label-radio">
+											<input type="radio" name="radio1" checked>
+											<span class="label-radio__icon"></span>
+											<span class="label-radio__text">Металлокаркас</span>
+										</label>
+									</li>
+								</ul>
+
+								<div class="row">
+									<div class="col-12 col-lg-6 mb-20">
+										<div class="slider-range-wrapper">
+											<div class="slider-wrapper">
+												<h4>Выберите длину основания (м):</h4>
+												<div class="slider slider2">
+													<div class="ui-slider-handle custom-handle custom-handle2"><span></span></div>
+												</div>
+
+												<div class="tooltip-wrapper">
+													<div class="tooltip-btn">?</div>
+													<div class="tooltip-box">
+														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam aliquid deserunt
+															praesentium quisquam quae et commodi. Amet ad ut totam voluptatem, dignissimos recusandae
+															rerum, enim dolore adipisci veniam quasi!</p>
+													</div>
+												</div>
+												<div class="slider-scale">
+													<p>0</p>
+													<p>10</p>
+												</div>
+											</div>
+											<div class="slider-range-value">
+												<p>Ввести вручную</p>
+												<label>
+													<input type="text" value="100" class="slider-input2">
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-12 col-lg-6">
+										<div class="slider-range-wrapper">
+											<div class="slider-wrapper">
+												<h4>Выберите высоту основания (м):</h4>
+												<div class="slider slider3">
+													<div class="ui-slider-handle custom-handle custom-handle3"><span></span></div>
+												</div>
+
+												<div class="tooltip-wrapper">
+													<div class="tooltip-btn">?</div>
+													<div class="tooltip-box">
+														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam aliquid deserunt
+															praesentium quisquam quae et commodi. Amet ad ut totam voluptatem, dignissimos recusandae
+															rerum, enim dolore adipisci veniam quasi!</p>
+													</div>
+												</div>
+												<div class="slider-scale">
+													<p>0</p>
+													<p>2</p>
+												</div>
+											</div>
+											<div class="slider-range-value">
+												<p>Ввести вручную</p>
+												<label>
+													<input type="text" value="0,3" class="slider-input3">
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="calculate-form-total">
+							<div class="calculate-form-total__image"><img src="img/calculate-image.png" alt=""></div>
+
+							<div class="total-price">
+								<p>ориентировачная стоимость*</p>
+								<div class="price">10 500 ₽</div>
+
+								<div class="price-description">*Не является публичной офертой</div>
+
+								<select name="select" class="select select-order">
+									<option value="Выбранные и дополнительные параметры">Выбранные и дополнительные параметры</option>
+									<option value="Выбранные и дополнительные параметры">Выбранные и дополнительные параметры</option>
+									<option value="Выбранные и дополнительные параметры">Выбранные и дополнительные параметры</option>
+								</select>
+							</div>
+
+							<div class="contacts-form">
+								<h4>Оставьте ваши данные и наши менеджеры свяжутся с вами для точного расчета</h4>
+								<label>
+									<input type="text" placeholder="Как к вам обращаться?" name="name">
+								</label>
+								<label>
+									<input type="text" placeholder="Телефон" name="phone">
+								</label>
+
+								<button type="submit" class="btn btn-md btn-accent">отправить заявку на расчет</button>
+								<div class="consent">нажимая на кнопку вы соглашаетесь с политикой конфиденциальности</div>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="unique-sings principles-work">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-xl-7">
+					<div class="unique-sings__content">
+						<h2>Принцип нашей работы</h2>
+						<div class="box-text">
+							<p>Наружная реклама – один из самых эффективных способов привлечения внимания, и от того, насколько
+								качественно и удачно
+								она сделана, зависит не только первое впечатление о компании, но и ваш имидж в целом. Это весомый
+								аргумент в пользу
+								того, чтобы доверить производство настоящим профессионалам.</p>
+							<p>«Арт-Мастер» - специализированная компания, которая занимается изготовлением и монтажом наружной
+								рекламы в Пензе. Наша
+								компания изготавливает любые внешние и внутренние конструкции: фасадные вывески, световые короба,
+								объемные буквы,
+								крышные установки, рекламные щиты, штендеры, таблички, выставочные стенды, оформление витрин,
+								брендирование транспорта,
+								баннеры и многое другое – все зависит от Ваших запросов и пожеланий.
+							</p>
+						</div>
+
+						<div class="principles-work-wrapper">
+							<div class="row">
+								<div class="col-12 col-sm-6">
+									<div class="advantaes-about-box">
+										<div class="advantaes-about-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
+										<div class="advantaes-about-box__text">
+											<h4>Гибкая ценовая политика</h4>
+											<p>Со всеми клиентами мы работаем индивидуально</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12 col-sm-6">
+									<div class="advantaes-about-box">
+										<div class="advantaes-about-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
+										<div class="advantaes-about-box__text">
+											<h4>Яркие вывески для бизнеса</h4>
+											<p>Уникальное офорление вашей компании</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12 col-sm-6">
+									<div class="advantaes-about-box">
+										<div class="advantaes-about-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
+										<div class="advantaes-about-box__text">
+											<h4>Полный комплекс работ</h4>
+											<p>От дизайна до монтажа.
+												Вы экономите время</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12 col-sm-6">
+									<div class="advantaes-about-box">
+										<div class="advantaes-about-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
+										<div class="advantaes-about-box__text">
+											<h4>Регистрация вывесок</h4>
+											<p>Безопасность
+												Вашего бизнеса</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-xl-5">
+					<div class="unique-sings__image"><img src="img/calculate-photo.jpg" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="reviews">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<h2>Отзывы</h2>
+				</div>
+				<div class="col-12 col-md-6">
+					<a href="reviews.html" class="btn btn-all-services btn-border-accent">
+						<span class="btn-text">все отзывы</span>
+						<span class="btn-icon btn-icon-arrow"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#next"></use>
+							</svg></span>
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<div class="reviews-slider">
+						<div class="slide">
+							<div class="reviews-col">
+								<div class="reviews-box">
+									<div class="reviews-box__head">
+										<div class="reviews-box__photo"><img src="img/reviews1.png" alt=""></div>
+										<div class="reviews-box__name">
+											<div class="name-user">Алексей Иванов</div>
+											<div class="position-user">генеральный директор</div>
+											<a href="https://sm58.ru" class="link-site">sm58.ru</a>
+										</div>
+									</div>
+									<div class="reviews-box__body">
+										<p>Очень понравилось с этой компанией! Ребята знают своей дело. Доверился им и не прогадал. Теперь
+											сеть моих точек
+											выделяется среди других! Спасибо!</p>
+									</div>
+									<div class="reviews-box__footer">
+										<a href="#" class="color-accent reviews-box__details">подробнее</a>
+									</div>
+								</div>
+								<div class="reviews-box">
+									<div class="reviews-box__head">
+										<div class="reviews-box__photo"><img src="img/reviews2.png" alt=""></div>
+										<div class="reviews-box__name">
+											<div class="name-user">Ирина Красикова</div>
+											<div class="position-user">генеральный директор</div>
+											<a href="https://fuller.ru" class="link-site">fuller.ru</a>
+										</div>
+									</div>
+									<div class="reviews-box__body">
+										<p>Спасибо! Баннеры просто шикарны!</p>
+									</div>
+									<div class="reviews-box__footer">
+										<a href="#" class="color-accent reviews-box__details">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="reviews-col">
+								<div class="reviews-box">
+									<div class="reviews-box__head">
+										<div class="reviews-box__photo"><img src="img/reviews3.png" alt=""></div>
+										<div class="reviews-box__name">
+											<div class="name-user">Елена Глазова</div>
+											<div class="position-user">менеджер</div>
+											<a href="https://woodroom.ru" class="link-site">woodroom.ru</a>
+										</div>
+									</div>
+									<div class="reviews-box__body">
+										<p>Спасибо! Баннеры просто шикарны!</p>
+									</div>
+									<div class="reviews-box__footer">
+										<a href="#" class="color-accent reviews-box__details">подробнее</a>
+									</div>
+								</div>
+								<div class="reviews-box">
+									<div class="reviews-box__head">
+										<div class="reviews-box__photo"><img src="img/reviews4.png" alt=""></div>
+										<div class="reviews-box__name">
+											<div class="name-user">Анатолий Фомин</div>
+											<div class="position-user">директор по развитию</div>
+											<a href="https://af-stroika.ru" class="link-site">af-stroika.ru</a>
+										</div>
+									</div>
+									<div class="reviews-box__body">
+										<p>И нет сомнений, что некоторые особенности внутренней политики освещают чрезвычайно интересные
+											особенности картины в
+											целом, однако конкретные выводы</p>
+									</div>
+									<div class="reviews-box__footer">
+										<a href="#" class="color-accent reviews-box__details">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="reviews-col">
+								<div class="reviews-box">
+									<div class="reviews-box__head">
+										<div class="reviews-box__photo"><img src="img/reviews5.png" alt=""></div>
+										<div class="reviews-box__name">
+											<div class="name-user">Сергей Ишанский</div>
+											<div class="position-user">генеральный директор</div>
+											<a href="https://teriakihouse.ru" class="link-site">teriakihouse.ru</a>
+										</div>
+									</div>
+									<div class="reviews-box__body">
+										<p>Лишь явные признаки победы институционализации лишь добавляют фракционных разногласий и
+											превращены в посмешище, хотя
+											само их существование приносит несомненную пользу обществу. Прежде всего, глубокий уровень
+											погружения способствует
+											повышению качества соответствующих условий активизации</p>
+									</div>
+									<div class="reviews-box__footer">
+										<a href="#" class="color-accent reviews-box__details">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="reviews-col">
+								<div class="reviews-box">
+									<div class="reviews-box__head">
+										<div class="reviews-box__photo"><img src="img/reviews6.png" alt=""></div>
+										<div class="reviews-box__name">
+											<div class="name-user">Екатерина Казакова</div>
+											<div class="position-user">управляющая компанией</div>
+											<a href="https://territoriasporta.ru" class="link-site">territoriasporta.ru</a>
+										</div>
+									</div>
+									<div class="reviews-box__body">
+										<p>Противоположная точка зрения подразумевает, что стремящиеся вытеснить традиционное производство,
+											нанотехнологии
+											формируют глобальную экономическую сеть и при этом — функционально разнесены на независимые
+											элементы.</p>
+									</div>
+									<div class="reviews-box__footer">
+										<a href="#" class="color-accent reviews-box__details">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="reviews-col">
+								<div class="reviews-box">
+									<div class="reviews-box__head">
+										<div class="reviews-box__photo"><img src="img/reviews1.png" alt=""></div>
+										<div class="reviews-box__name">
+											<div class="name-user">Алексей Иванов</div>
+											<div class="position-user">генеральный директор</div>
+											<a href="https://sm58.ru" class="link-site">sm58.ru</a>
+										</div>
+									</div>
+									<div class="reviews-box__body">
+										<p>Очень понравилось с этой компанией! Ребята знают своей дело. Доверился им и не прогадал. Теперь
+											сеть моих точек
+											выделяется среди других! Спасибо!</p>
+									</div>
+									<div class="reviews-box__footer">
+										<a href="#" class="color-accent reviews-box__details">подробнее</a>
+									</div>
+								</div>
+								<div class="reviews-box">
+									<div class="reviews-box__head">
+										<div class="reviews-box__photo"><img src="img/reviews2.png" alt=""></div>
+										<div class="reviews-box__name">
+											<div class="name-user">Ирина Красикова</div>
+											<div class="position-user">генеральный директор</div>
+											<a href="https://fuller.ru" class="link-site">fuller.ru</a>
+										</div>
+									</div>
+									<div class="reviews-box__body">
+										<p>Спасибо! Баннеры просто шикарны!</p>
+									</div>
+									<div class="reviews-box__footer">
+										<a href="#" class="color-accent reviews-box__details">подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bg"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="clients">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Наши клиенты</h2>
+				</div>
+
+				<div class="col-12">
+					<div class="clients-wrapper">
+						<div class="clients-box"><img src="img/logo-company1.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company2.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company3.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company4.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company5.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company6.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company7.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company8.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company9.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company10.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company11.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company3.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company4.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company5.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company6.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company7.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company8.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company1.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company2.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company3.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company4.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company5.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company10.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company11.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company3.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company4.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company8.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company9.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company10.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company11.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company4.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company5.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company6.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company7.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company8.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company1.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company2.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company3.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company4.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company5.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company10.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company11.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company3.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company4.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company8.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company9.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company10.png" alt=""></div>
+						<div class="clients-box"><img src="img/logo-company11.png" alt=""></div>
+					</div>
+
+					<a href="#" class="btn btn-accent btn-load">
+						<span class="btn-text">показать больше</span>
+						<span class="btn-icon-arrow"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+							</svg></span>
+					</a>
+				</div>
+			</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-xl-6 offset-xxl-1 col-xxl-4">
+					<div class="cooperation-box">
+						<h3>Готовы начать
+							сотрудничать?</h3>
+
+						<div class="cooperation-box__callback">
+							<div class="cooperation-box__subtitle">Мы свяжемся с вами в течении 30 минут</div>
+							<form method="post" class="form-cooperation">
+								<label>
+									<input type="text" placeholder="Ваш телефон" name="phone">
+								</label>
+								<button type="submit" class="btn btn-md btn-accent">перезвоните мне</button>
+								<div class="consent">нажимая на кнопку вы соглашаетесь с политикой конфиденциальности</div>
+							</form>
+						</div>
+
+						<div class="cooperation-box__bottom">
+							<div class="copyright">© Рекламное агентство «Арт-Мастер», 2022</div>
+							<a href="#" class="color-grey link-document">Юридическая информация</a>
+							<a href="#" class="color-grey link-document">Политика конфиденциальности</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-xl-6">
+					<div class="footer-box">
+						<div class="footer-box__contacts">
+							<div class="phones">
+								<a href="tel:+78412458108" class="phone"><strong>8 8412 45 81 08</strong></a>
+								<a href="tel:+78412292659" class="phone">8 8412 29 26 59</a>
+							</div>
+
+							<div class="schedule contacts-box">
+								<span class="schedule-icon contacts-box__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#location"></use>
+									</svg></span>
+								<span class="schedule-text contacts-box__text">Пенза, ул. Терновского 220, к. 4</span>
+							</div>
+
+							<a href="mailto:292059@mail.ru" class="mail contacts-box">
+								<span class="mail-icon contacts-box__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#mail"></use>
+									</svg></span>
+								<span class="mail-text contacts-box__text">292059@mail.ru</span>
+							</a>
+						</div>
+
+						<div class="footer-box__map">
+							<iframe
+								src="https://yandex.ru/map-widget/v1/?ll=45.022457%2C53.135485&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgk3NzUyOTE2NDUSQ9Cg0L7RgdGB0LjRjywg0J%2FQtdC90LfQsCwg0YPQu9C40YbQsCDQotC10YDQvdC%2B0LLRgdC60L7Qs9C%2BLCAyMjDQujQiCg0AFzRCFb2KVEI%3D&z=16.8"
+								frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+						</div>
+
+						<div class="footer-box__bottom">
+							<ul class="list-social my-ul">
+								<li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+							</ul>
+
+							<div class="developer-box">
+								<p>разработано</p>
+
+								<a href="#" class="link-developer" target="_blank"><img src="img/logo-developer.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Оставьте заявку</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-subtitle">Мы свяжемся с вами в течении 30 минут</div>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form-callback">
+						<label>
+							<input type="text" placeholder="Как к вам обращаться?" name="name">
+						</label>
+						<label>
+							<input type="text" placeholder="ваш телефон" name="phone">
+						</label>
+						<button type="submit" class="btn btn-md btn-accent">перезвоните мне</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/fancybox.umd.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

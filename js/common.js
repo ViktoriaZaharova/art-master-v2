@@ -71,6 +71,100 @@ $('.home-slider-nav').slick({
 	]
 });
 
+$('.type-products').slick({
+	slidesToShow: 7,
+	infinite: false,
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 1550,
+			settings: {
+				slidesToShow: 6,
+			}
+		},
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 5,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 4,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 3,
+			}
+		}, {
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+			}
+		}
+	]
+});
+
+$(function () {
+	var handle = $(".custom-handle1 span");
+	$(".slider1").slider({
+		min: 0,
+		max: 200,
+		value: 100,
+		animate: "slow",
+		range: "min",    
+		create: function () {
+			handle.text($(this).slider("value"));
+		},
+		slide: function (event, ui) {
+			handle.text(ui.value);
+			$(".slider-input1").val(ui.value);
+		}
+	});
+
+	$(".slider-input1").val($(".slider1").slider("values", 0));
+
+	var handle2 = $(".custom-handle2 span");
+	$(".slider2").slider({
+		min: 1,
+		max: 10,
+		value: 2,
+		animate: "slow",
+		range: "min",
+		create: function () {
+			handle2.text($(this).slider("value"));
+		},
+		slide: function (event, ui) {
+			handle2.text(ui.value);
+			$(".slider-input2").val(ui.value);
+		}
+	});
+
+	$(".slider-input2").val($(".slider2").slider("values", 0));
+
+	var handle3 = $(".custom-handle3 span");
+	$(".slider3").slider({
+		min: 0,
+		max: 2,
+		value: 1,
+		animate: "slow",
+		range: "min",
+		create: function () {
+			handle3.text($(this).slider("value"));
+		},
+		slide: function (event, ui) {
+			handle3.text(ui.value);
+			$(".slider-input3").val(ui.value);
+		}
+	});
+
+	$(".slider-input3").val($(".slider3").slider("values", 0));
+});
+
 
 
 
