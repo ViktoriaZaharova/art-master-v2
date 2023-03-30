@@ -109,6 +109,19 @@ $('.type-products').slick({
 	]
 });
 
+$('.advantages-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	arrows: false,
+	dots: true,
+	autoplay: true,
+	autoplaySpeed: 2000,
+	verticalSwiping: true,
+	draggable: true,
+	swipeToSlide: true,
+	pauseOnHover: false
+});
+
 $(function () {
 	var handle = $(".custom-handle1 span");
 	$(".slider1").slider({
