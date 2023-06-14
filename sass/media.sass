@@ -21,6 +21,15 @@
 		.slide
 			margin: 0 10px	
 
+	header .mail
+		margin: 0 20px 0 0
+
+	.btn-burger			
+		margin: 0 0 0 50px
+
+	header .phone
+		margin: 0 20px 0 30px	
+
 @media only screen and (max-width: 1520px)
 	.btn-services, .btn-burger
 		margin: 0 0 0 40px
@@ -62,11 +71,19 @@
 
 @media only screen and (max-width: 1440px)
 	.btn-services
-		margin: 0 auto 0 40px
+		margin: 0 auto 0 15px
 
 	header
 		.phone
-			margin: 0 30px
+			margin: 0 20px
+			font-size: 16px
+
+	.logo
+		max-width: 145px
+
+	.btn-search
+		width: 22px
+		height: 22px			
 
 	.btn-burger
 		margin: 0 0 0 20px
@@ -83,6 +100,12 @@
 			font-size: 50px
 		h3
 			font-size: 28px
+
+	.service-card .btn
+		margin: 0 auto 0 0		
+
+	.menu li
+		margin: 0 15px 0 0	
 
 @media only screen and (max-width: 1400px)
 	.advantaes-about__image
@@ -127,7 +150,7 @@
 		font-size: 14px
 
 	.services-dropdown-main
-		max-width: 570px
+		max-width: 900px
 
 	.menu-col-dropdown
 		max-width: 205px
@@ -153,6 +176,29 @@
 
 	.grid-wrapper
 		max-height: 900px
+
+	.page-stages-work h1
+		font-size: 50px 
+		margin: 0 auto 50px	
+
+	.stages-work-box
+		margin-bottom: 150px
+		max-width: 400px
+		h3
+			font-size: 26px
+		&__text
+			padding: 30px 20px
+			width: calc(100% - 80px)	
+		&__number
+			font-size: 54px
+			width: 80px		
+
+	.stages-work-wrapper
+		max-width: 975px
+
+	.stages-work-box:nth-child(even):after
+		width: 600px	
+		margin: 20px 0 0		
 
 @media only screen and (max-width: 1200px)
 	.company-wrapper
@@ -292,7 +338,24 @@
 
 	.principles-work-wrapper
 		margin: 30px 0 0
-		padding: 30px 0 0		
+		padding: 30px 0 0	
+
+	.page-faq
+		margin: 0 0 70px		
+
+	.faq-box
+		&__head	
+			padding: 20px
+			font-size: 18px
+			text-align: left
+			&::after
+				width: 25px
+		&__body
+			font-size: 16px
+			line-height: normal
+			padding: 0 20px 20px
+			text-align: left
+
 
 @media only screen and (max-width: 992px)
 	.company-wrapper
@@ -419,6 +482,20 @@
 			br
 				display: none
 
+	.stages-work-box
+		max-width: none
+		margin: 0 0 30px
+		min-height: 150px
+		&::after
+			display: none
+
+	.faq-box
+		margin: 0 0 20px
+		&:last-child
+			margin: 0 0 20px
+
+	.page-faq
+		margin: 0 0 60px				
 
 @media only screen and (max-width: 800px)
 	.search-wrapper .form-search
@@ -426,8 +503,9 @@
 
 @media only screen and (max-width: 768px)
 	header
-		.search-wrapper
+		.search-wrapper, .mail
 			display: none
+
 
 	.modal-header
 		.btn-close
@@ -515,7 +593,6 @@
 			left: 0
 		.slick-next
 			right: 0	
-
 
 
 @media only screen and (max-width: 650px)
@@ -719,6 +796,9 @@
 	.list-radio li
 		width: 100%
 		margin: 0 0 10px	
+
+	.page-stages-work h1
+		font-size: 40px	
 					
 
 @media only screen and (max-width: 480px)
@@ -774,6 +854,31 @@
 
 	.select-order
 		font-size: 14px					
+
+	.stages-work-box
+		h3
+			font-size: 20px
+			margin: 0 0 10px
+		&__number
+			font-size: 34px	
+		.box-text
+			font-size: 16px	
+			line-height: normal
+
+	.page-stages-work h1
+		font-size: 30px
+		margin: 0 auto 30px		
+
+	.reviews-box
+		margin: 0 0 10px	
+
+	.unique-sings .btn-group
+		flex-direction: column
+		.btn
+			margin: 0 auto 10px
+			width: 100%
+			&:last-child
+				margin: 0 auto	
 
 @media only screen and (max-width: 420px)
 	header

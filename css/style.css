@@ -299,6 +299,9 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #fff;
   border-color: #FF0000;
 }
+.btn-border-grey:hover .svg-icon {
+  stroke: #fff;
+}
 
 .btn-icon-arrow {
   fill: none;

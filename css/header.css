@@ -38,7 +38,15 @@ header {
   padding: 25px 0;
 }
 header .phone {
-  margin: 0 58px 0 68px;
+  margin: 0 38px 0 68px;
+}
+header .mail {
+  margin: 0 73px 0 0;
+  font-size: 18px;
+  color: #000;
+}
+header .mail:hover {
+  color: #FF0000;
 }
 
 .services-dropdown {
@@ -79,7 +87,7 @@ header .phone {
 }
 
 .services-dropdown-main {
-  max-width: 596px;
+  max-width: 886px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,13 +168,16 @@ header .phone {
 .menu-col-dropdown {
   height: 100%;
   width: 100%;
-  max-width: 224px;
-  border-right: 1px solid #C0C0C0;
+  max-width: 296px;
+  border-right: 1px solid transparent;
+  border-left: 1px solid #C0C0C0;
   padding: 74px 0 38px 26px;
   position: absolute;
   left: 100%;
   top: 0;
   display: none;
+  background: #fff;
+  z-index: 2;
 }
 .menu-col-dropdown__list {
   font-size: 16px;
@@ -405,7 +416,7 @@ header .phone {
 .mobile-menu {
   display: none;
   position: fixed;
-  left: 0;
+  right: 0;
   top: 0;
   z-index: 7;
   height: 100%;

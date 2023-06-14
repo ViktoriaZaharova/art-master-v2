@@ -21,6 +21,15 @@
   .type-products .slide {
     margin: 0 10px;
   }
+  header .mail {
+    margin: 0 20px 0 0;
+  }
+  .btn-burger {
+    margin: 0 0 0 50px;
+  }
+  header .phone {
+    margin: 0 20px 0 30px;
+  }
 }
 @media only screen and (max-width: 1520px) {
   .btn-services, .btn-burger {
@@ -66,10 +75,18 @@
 }
 @media only screen and (max-width: 1440px) {
   .btn-services {
-    margin: 0 auto 0 40px;
+    margin: 0 auto 0 15px;
   }
   header .phone {
-    margin: 0 30px;
+    margin: 0 20px;
+    font-size: 16px;
+  }
+  .logo {
+    max-width: 145px;
+  }
+  .btn-search {
+    width: 22px;
+    height: 22px;
   }
   .btn-burger {
     margin: 0 0 0 20px;
@@ -85,6 +102,12 @@
   }
   .page-portfolio-home h3 {
     font-size: 28px;
+  }
+  .service-card .btn {
+    margin: 0 auto 0 0;
+  }
+  .menu li {
+    margin: 0 15px 0 0;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -132,7 +155,7 @@
     font-size: 14px;
   }
   .services-dropdown-main {
-    max-width: 570px;
+    max-width: 900px;
   }
   .menu-col-dropdown {
     max-width: 205px;
@@ -157,6 +180,32 @@
   }
   .grid-wrapper {
     max-height: 900px;
+  }
+  .page-stages-work h1 {
+    font-size: 50px;
+    margin: 0 auto 50px;
+  }
+  .stages-work-box {
+    margin-bottom: 150px;
+    max-width: 400px;
+  }
+  .stages-work-box h3 {
+    font-size: 26px;
+  }
+  .stages-work-box__text {
+    padding: 30px 20px;
+    width: calc(100% - 80px);
+  }
+  .stages-work-box__number {
+    font-size: 54px;
+    width: 80px;
+  }
+  .stages-work-wrapper {
+    max-width: 975px;
+  }
+  .stages-work-box:nth-child(even):after {
+    width: 600px;
+    margin: 20px 0 0;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -305,6 +354,23 @@
     margin: 30px 0 0;
     padding: 30px 0 0;
   }
+  .page-faq {
+    margin: 0 0 70px;
+  }
+  .faq-box__head {
+    padding: 20px;
+    font-size: 18px;
+    text-align: left;
+  }
+  .faq-box__head::after {
+    width: 25px;
+  }
+  .faq-box__body {
+    font-size: 16px;
+    line-height: normal;
+    padding: 0 20px 20px;
+    text-align: left;
+  }
 }
 @media only screen and (max-width: 992px) {
   .company-wrapper {
@@ -443,6 +509,23 @@
   .calculate-form-content__row h3 br {
     display: none;
   }
+  .stages-work-box {
+    max-width: none;
+    margin: 0 0 30px;
+    min-height: 150px;
+  }
+  .stages-work-box::after {
+    display: none;
+  }
+  .faq-box {
+    margin: 0 0 20px;
+  }
+  .faq-box:last-child {
+    margin: 0 0 20px;
+  }
+  .page-faq {
+    margin: 0 0 60px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .search-wrapper .form-search {
@@ -450,7 +533,7 @@
   }
 }
 @media only screen and (max-width: 768px) {
-  header .search-wrapper {
+  header .search-wrapper, header .mail {
     display: none;
   }
   .modal-header .btn-close {
@@ -763,6 +846,9 @@
     width: 100%;
     margin: 0 0 10px;
   }
+  .page-stages-work h1 {
+    font-size: 40px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .logo {
@@ -820,6 +906,37 @@
   }
   .select-order {
     font-size: 14px;
+  }
+  .stages-work-box h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  .stages-work-box__number {
+    font-size: 34px;
+  }
+  .stages-work-box .box-text {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .page-stages-work h1 {
+    font-size: 30px;
+    margin: 0 auto 30px;
+  }
+  .reviews-box {
+    margin: 0 0 10px;
+  }
+  .unique-sings .btn-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .unique-sings .btn-group .btn {
+    margin: 0 auto 10px;
+    width: 100%;
+  }
+  .unique-sings .btn-group .btn:last-child {
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 420px) {

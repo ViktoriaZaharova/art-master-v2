@@ -11,7 +11,14 @@ header
 	z-index: 5
 	padding: 25px 0
 	.phone
-		margin: 0 58px 0 68px
+		margin: 0 38px 0 68px
+	.mail
+		margin: 0 73px 0 0
+		font-size: 18px
+		color: #000
+		&:hover
+			color: $accent
+
 
 .services-dropdown
 	display: none
@@ -37,7 +44,7 @@ header
 	align-items: stretch
 
 .services-dropdown-main
-	max-width: 596px
+	max-width: 886px
 	width: 100%
 	display: flex
 	align-items: stretch
@@ -96,14 +103,17 @@ header
 	// flex: 1
 	height: 100%
 	width: 100%
-	max-width: 224px
-	border-right: 1px solid #C0C0C0
+	max-width: 296px
+	border-right: 1px solid transparent
+	border-left: 1px solid #C0C0C0
 	// max-width: 25%
 	padding: 74px 0 38px 26px
 	position: absolute
 	left: 100%
 	top: 0
 	display: none
+	background: #fff
+	z-index: 2
 
 		
 	&__list
@@ -265,7 +275,7 @@ header
 .mobile-menu
 	display: none
 	position: fixed
-	left: 0
+	right: 0
 	top: 0
 	z-index: 7
 	height: 100%

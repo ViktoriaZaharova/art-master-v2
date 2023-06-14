@@ -184,6 +184,7 @@
 		height: calc(100% - 226px)
 		display: flex
 		flex-direction: column
+		border-radius: 0 0 5px 5px
 	&__title
 		color: #000
 		margin: 0 0 29px
@@ -206,6 +207,17 @@
 		margin: 0 45px 0 0
 		&:last-child
 			margin: 0
+	&-exclusive
+		.service-card__body
+			background: #000000
+		.service-card__title
+			color: #fff
+		.btn-grey
+			background: $accent
+			color: #fff
+		.btn-light-grey
+			background: #000
+			color: #fff				
 // popular services end		
 
 // advantages
@@ -510,7 +522,7 @@
 
 .reviews-box
 	width: 100%
-	margin: 0 0 21px
+	margin: 0 0 30px
 	padding: 24px 30px 20px
 	border: 1px solid #666666
 	border-radius: 5px
@@ -716,6 +728,12 @@
 	&__image
 		@include d-flex
 		min-width: 800px
+	.btn-group
+		width: 100%
+		justify-content: space-between
+		.btn
+			width: fit-content
+			flex: none	
 
 .page-service2
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/service-bg2.jpg') no-repeat center
@@ -1203,7 +1221,7 @@
 		max-width: 345px
 		width: 100%
 	.consent
-		font-size: 10px	
+		font-size: 10px
 
 .label-radio
 	// width: 100%
@@ -1273,7 +1291,7 @@
 		right: 125px
 	h4
 		margin: 0 0 24px
-		font-size: 20px	
+		font-size: 20px
 
 .slider-range-wrapper
 	width: 100%
@@ -1354,5 +1372,135 @@
 		&:last-child
 			margin: 0	0 30px
 
-
 // page price end	
+
+// page stages work
+.popular-services-v2
+	margin: 0 0 57px
+
+.reviews-v2
+	margin: 0 0 107px
+
+.page-stages-work
+	h1
+		margin: 0 auto 130px
+		font-size: 64px
+
+.stages-work-wrapper
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	justify-content: center
+	max-width: 1285px
+	margin: 0 auto
+
+.stages-work-box
+	display: flex
+	align-items: stretch
+	margin: 0 0 160px
+	border: 1px solid #666666
+	border-radius: 5px
+	max-width: 560px
+	min-height: 218px
+	width: 100%
+	position: relative
+	&__number
+		background: #FF0000
+		border-radius: 5px
+		color: #fff
+		font-size: 64px
+		font-weight: bold
+		width: 119px
+		@include d-flex
+	&__text
+		width: calc(100% - 119px)
+		padding: 39px 75px 25px 46px
+	h3
+		font-size: 32px
+		font-weight: bold
+		margin: 0 0 17px
+		text-transform: uppercase
+	.box-text
+		font-size: 18px
+		line-height: 24px
+	&::after
+		content: ''
+		display: flex
+		width: 107px
+		height: 12px
+		background: url('../img/stages-work-arrow1.svg') no-repeat center
+		background-size: 100%
+		position: absolute
+		top: 50%
+		left: 100%
+		margin-left: 30px
+		transform: translate(0,-50%)
+	&:nth-child(even)
+		margin-left: auto
+		&:after
+			width: 756px
+			height: 110px
+			top: 100%
+			bottom: 0
+			transform: none
+			left: -85%
+			background: url('../img/stages-work-arrow2.svg') no-repeat center
+			background-size: 100%
+			margin: 26px 0 0
+	&:last-child
+		&::after
+			display: none
+
+// page stages work end
+
+// page faq	
+.page-faq
+	margin: 0 0 134px
+	h1
+		margin: 0 0 86px
+
+.faq-box
+	width: 100%
+	margin: 0 0 32px
+	border: 1px solid #666666
+	border-radius: 5px
+	&__head
+		width: 100%
+		display: flex
+		align-items: center
+		font-weight: 500
+		font-size: 20px
+		text-transform: uppercase
+		justify-content: flex-start
+		text-align: justify
+		padding: 39px 54px 39px 23px
+		&:after 
+			content: ''
+			background: url('../img/collapse-figure.svg') no-repeat center
+			background-size: 100%
+			width: 34px
+			height: 19px
+			margin: 0 0 0 auto
+			@include d-flex
+			transform: rotate(180deg)
+		&.collapsed
+			&:after
+				transform: none		
+	&__body
+		text-align: justify
+		font-size: 18px
+		line-height: 24px		
+		padding: 0 54px 30px 23px
+	&:last-child
+		margin: 0
+	
+.btn-load-text
+	.svg-icon
+		height: 8px
+		width: 16px
+		fill: none 
+		stroke: #000000
+		@include d-flex
+		margin: 0 0 0 10px	
+// page faq end	
