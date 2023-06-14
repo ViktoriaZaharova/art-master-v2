@@ -75,7 +75,7 @@
 }
 @media only screen and (max-width: 1440px) {
   .btn-services {
-    margin: 0 auto 0 15px;
+    margin: 0 0 0 40px;
   }
   header .phone {
     margin: 0 20px;
@@ -139,6 +139,9 @@
   }
 }
 @media only screen and (max-width: 1310px) {
+  .btn-services {
+    margin: 0 0 0 15px;
+  }
   .h1, .h2 {
     font-size: 60px;
   }
