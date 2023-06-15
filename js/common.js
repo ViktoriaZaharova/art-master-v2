@@ -5,6 +5,10 @@ $('.btn-burger').on('click', function (e) {
 	$('.mobile-menu').fadeToggle();
 });
 
+$('.mobile-menu__close').on('click', function () {
+	$('.mobile-menu').fadeOut();
+});
+
 $('.btn-search').on('click', function (e) {
 	e.preventDefault();
 	$('.search-wrapper .form-search').fadeToggle();
@@ -235,8 +239,8 @@ $('.reviews-slider').slick({
 	slidesToShow: 1,
 	arrows: false,
 	variableWidth: true,
-	autoplay: true,
-	autoplaySpeed: 2000,
+	// autoplay: true,
+	// autoplaySpeed: 2000,
 });
 
 //progressbar
@@ -292,5 +296,28 @@ $('.btn-load-reviews').click(function (e) {
 	e.preventDefault();
 	$('.grid-wrapper').addClass('open');
 	$(this).hide();
+});
+// show list all
+
+// show list all
+$('.btn-load-text').on('click', function (e) {
+	e.preventDefault();
+
+	var
+		$this = $(this),
+		content = $(this).parents().find('.box-text-toggle');
+
+
+	if (!$this.hasClass('trigger')) {
+		$this.addClass('trigger');
+		$this.find('.btn-text').text('скрыть');
+
+		content.addClass('open');
+	} else {
+		$this.removeClass('trigger');
+		$this.find('.btn-text').text('показать  больше');
+
+		content.removeClass('open');
+	}
 });
 // show list all

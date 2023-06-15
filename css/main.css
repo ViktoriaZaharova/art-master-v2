@@ -1478,6 +1478,20 @@
   min-width: 1092px;
 }
 
+.box-text-toggle {
+  overflow: hidden;
+  display: -moz-box;
+  display: -webkit-box;
+  line-clamp: 9;
+  box-orient: vertical;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+}
+.box-text-toggle.open {
+  overflow: visible;
+  display: block;
+}
+
 .advantages-manufacturer {
   margin: 0 0 100px;
 }
@@ -2179,21 +2193,4 @@
 }
 .faq-box:last-child {
   margin: 0;
-}
-
-.btn-load-text .svg-icon {
-  height: 8px;
-  width: 16px;
-  fill: none;
-  stroke: #000000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 0 0 10px;
 }

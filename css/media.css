@@ -273,7 +273,7 @@
     max-width: 600px;
     bottom: 0;
     right: 0;
-    margin: 30px auto 0;
+    margin: 0 auto 30px;
   }
   .services-wrapper {
     margin: 0 0 40px;
@@ -654,6 +654,9 @@
     width: 100%;
     margin: 0 auto 20px;
   }
+  .principles {
+    border: none;
+  }
 }
 @media only screen and (max-width: 576px) {
   .home-nav-item {
@@ -698,6 +701,12 @@
   .location-country-box__info {
     font-size: 20px;
     line-height: normal;
+  }
+  .location-country {
+    margin: 0 0 40px;
+  }
+  .location-country__map {
+    display: none;
   }
   .company-plus {
     font-size: 16px;

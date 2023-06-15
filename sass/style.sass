@@ -183,10 +183,24 @@ button, .btn
 		.btn-icon-arrow
 			stroke: #fff
 
+.btn-load-text
+	.svg-icon
+		height: 8px
+		width: 16px
+		fill: none
+		stroke: #000000
+		@include d-flex
+		margin: 0 0 0 10px
+	&.trigger
+		.svg-icon
+			transform: rotate(180deg)
+
 .btn-border-white
 	border: 1px solid #fff
 	filter: drop-shadow(0px 5px 15px rgba(255, 53, 53, 0.25))
 	color: #fff
+	.svg-icon
+		stroke: #fff
 	&:hover
 		background: $accent
 		color: #fff

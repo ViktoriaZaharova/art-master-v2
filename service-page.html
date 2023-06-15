@@ -13,8 +13,8 @@
 	<!-- add plugins css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/slick.css">
-		<link rel="stylesheet" href="css/fancybox.css">
-		<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/fancybox.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<!-- add plugins css end -->
 
 	<link rel="stylesheet" href="css/style.css">
@@ -27,6 +27,7 @@
 <body>
 
 	<div class="mobile-menu">
+		<div class="mobile-menu__close"></div>
 		<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 		<ul class="menu my-ul">
 			<li><a href="catalog.html">Каталог</a></li>
@@ -101,7 +102,7 @@
 					</div>
 
 					<a href="tel:+78412458108" class="phone">8 (8412) 45 81 08</a>
-<a href="mailto:292059@mail.ru" class="mail">292059@mail.ru</a>
+					<a href="mailto:292059@mail.ru" class="mail">292059@mail.ru</a>
 					<a href="#" class="btn btn-sm btn-accent btn-callback" data-bs-toggle="modal"
 						data-bs-target="#callbackModal">оставить заявку</a>
 
@@ -154,10 +155,10 @@
 								</ul>
 							</div>
 						</div>
-		
+
 						<a href="services.html" class="btn btn-md btn-accent">все услуги</a>
 					</div>
-		
+
 					<div class="services-dropdown__col">
 						<div class="services-dropdown-box">
 							<div class="services-dropdown-box__head">
@@ -169,12 +170,12 @@
 									<li><a href="#">Вывески в рассрочку в Пензе</a></li>
 									<li class="js-tab-trigger">
 										<a href="#">Вывески с объемными буквами</a>
-		
+
 										<div class="services-dropdown__col menu-col-dropdown">
 											<ul class="menu-col-dropdown__list my-ul">
 												<li class="js-tab-trigger">
 													<a href="#">Из металла</a>
-		
+
 													<div class="services-dropdown__col menu-col-dropdown menu-col-dropdown-last">
 														<ul class="menu-col-dropdown__list my-ul">
 															<li><a href="#">Металлические</a></li>
@@ -182,7 +183,7 @@
 														</ul>
 													</div>
 												</li>
-		
+
 												<li><a href="#">Композитные</a></li>
 												<li><a href="#">На металлическом каркасе</a></li>
 												<li><a href="#">Интерьерные</a></li>
@@ -198,7 +199,7 @@
 											<ul class="menu-col-dropdown__list my-ul">
 												<li class="js-tab-trigger">
 													<a href="#">Из металла</a>
-		
+
 													<div class="services-dropdown__col menu-col-dropdown menu-col-dropdown-last">
 														<ul class="menu-col-dropdown__list my-ul">
 															<li><a href="#">Металлические</a></li>
@@ -206,7 +207,7 @@
 														</ul>
 													</div>
 												</li>
-		
+
 												<li><a href="#">Композитные</a></li>
 												<li><a href="#">На металлическом каркасе</a></li>
 												<li><a href="#">Интерьерные</a></li>
@@ -226,7 +227,7 @@
 								</ul>
 							</div>
 						</div>
-		
+
 					</div>
 					<div class="services-dropdown__col">
 						<div class="services-dropdown-box">
@@ -241,7 +242,7 @@
 								</ul>
 							</div>
 						</div>
-		
+
 						<div class="services-dropdown-box">
 							<div class="services-dropdown-box__head">
 								<div class="services-dropdown-box__icon"><img src="img/menu-icon5.svg" alt=""></div>
@@ -254,7 +255,7 @@
 								</ul>
 							</div>
 						</div>
-		
+
 						<div class="services-dropdown-box">
 							<div class="services-dropdown-box__head">
 								<div class="services-dropdown-box__icon"><img src="img/menu-icon6.svg" alt=""></div>
@@ -270,7 +271,7 @@
 						</div>
 					</div>
 				</div>
-		
+
 			</div>
 		</div>
 	</header>
@@ -454,7 +455,7 @@
 				<div class="col-12 col-lg-7">
 					<div class="unique-sings__content">
 						<h2>Уникальные вывески в короткие сроки</h2>
-						<div class="box-text">
+						<div class="box-text box-text-toggle">
 							<p>Наружная реклама – один из самых эффективных способов привлечения внимания, и от того, насколько
 								качественно и удачно
 								она сделана, зависит не только первое впечатление о компании, но и ваш имидж в целом. Это весомый
@@ -471,10 +472,26 @@
 								брендирование транспорта,
 								баннеры и многое другое – все зависит от Ваших запросов и пожеланий.
 							</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique velit suscipit deleniti quam in
+								ullam blanditiis dolorum! Modi vitae quod, quaerat omnis tempore ullam molestias totam reiciendis
+								eligendi corrupti laborum.</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique velit suscipit deleniti quam in
+								ullam blanditiis dolorum! Modi vitae quod, quaerat omnis tempore ullam molestias totam reiciendis
+								eligendi corrupti laborum.</p>
 						</div>
 
-						<a href="#" class="btn btn-md btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">оставить
-							заявку</a>
+						<div class="btn-group">
+							<a href="#" class="btn btn-border-white btn-load-text">
+								<span class="btn-text">показать больше</span>
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+
+
+							<a href="#" class="btn btn-md btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">оставить
+								заявку</a>
+						</div>
 					</div>
 				</div>
 				<div class="col-12 col-lg-5">
@@ -1321,9 +1338,9 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
-		<script src="js/fancybox.umd.js"></script>
-		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/fancybox.umd.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 	<!-- add plugins js end-->
 
 	<script src="js/common.js"></script>

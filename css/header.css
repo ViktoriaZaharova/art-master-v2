@@ -450,6 +450,33 @@ header .mail:hover {
 .mobile-menu .menu li:last-child {
   margin: 0;
 }
+.mobile-menu__close {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  right: 20px;
+  top: 20px;
+  width: 24px;
+  height: 24px;
+}
+.mobile-menu__close::before, .mobile-menu__close::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #FF0000;
+  border-radius: 3px;
+}
+.mobile-menu__close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.mobile-menu__close::after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
 
 .submenu {
   width: 100%;

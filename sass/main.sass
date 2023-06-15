@@ -217,7 +217,7 @@
 			color: #fff
 		.btn-light-grey
 			background: #000
-			color: #fff				
+			color: #fff
 // popular services end		
 
 // advantages
@@ -733,7 +733,7 @@
 		justify-content: space-between
 		.btn
 			width: fit-content
-			flex: none	
+			flex: none
 
 .page-service2
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/service-bg2.jpg') no-repeat center
@@ -998,6 +998,20 @@
 		padding: 80px 0
 	.unique-sings__image
 		min-width: 1092px
+
+.box-text-toggle
+	overflow: hidden
+	// text-overflow: ellipsis
+	display: -moz-box
+	display: -webkit-box
+	line-clamp: 9
+	box-orient: vertical
+	-moz-box-orient: vertical
+	-webkit-line-clamp: 9
+	-webkit-box-orient: vertical
+	&.open
+		overflow: visible
+		display: block
 
 .advantages-manufacturer
 	margin: 0 0 100px
@@ -1475,7 +1489,7 @@
 		justify-content: flex-start
 		text-align: justify
 		padding: 39px 54px 39px 23px
-		&:after 
+		&:after
 			content: ''
 			background: url('../img/collapse-figure.svg') no-repeat center
 			background-size: 100%
@@ -1486,21 +1500,15 @@
 			transform: rotate(180deg)
 		&.collapsed
 			&:after
-				transform: none		
+				transform: none
 	&__body
 		text-align: justify
 		font-size: 18px
-		line-height: 24px		
+		line-height: 24px
 		padding: 0 54px 30px 23px
 	&:last-child
 		margin: 0
-	
-.btn-load-text
-	.svg-icon
-		height: 8px
-		width: 16px
-		fill: none 
-		stroke: #000000
-		@include d-flex
-		margin: 0 0 0 10px	
+
+
+
 // page faq end	
