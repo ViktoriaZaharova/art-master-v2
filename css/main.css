@@ -1488,6 +1488,7 @@
   overflow: visible;
   display: block;
   -webkit-line-clamp: none;
+  -webkit-box-orient: horizontally;
 }
 
 .advantages-manufacturer {
