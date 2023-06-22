@@ -313,24 +313,24 @@ $('.btn-load-reviews').click(function (e) {
 // show list all
 
 // show list all
-$('.btn-load-text').on('click', function (e) {
-	e.preventDefault();
+// $('.btn-load-text').on('click', function (e) {
+// 	e.preventDefault();
 
-	var
-		$this = $(this),
-		content = $(this).parents().find('.box-text-toggle');
+// 	var
+// 		$this = $(this),
+// 		content = $(this).parents().find('.box-text-toggle');
 
 
-	if (!$this.hasClass('trigger')) {
-		$this.addClass('trigger');
-		$this.find('.btn-text').text('скрыть');
+// 	if (!$this.hasClass('trigger')) {
+// 		$this.addClass('trigger');
+// 		$this.find('.btn-text').text('скрыть');
 
-		content.addClass('open');
-	} else {
-		$this.removeClass('trigger');
-		$this.find('.btn-text').text('показать  больше');
+// 		content.addClass('open');
+// 	} else {
+// 		$this.removeClass('trigger');
+// 		$this.find('.btn-text').text('показать  больше');
 
-		content.removeClass('open');
-	}
-});
+// 		content.removeClass('open');
+// 	}
+// });
 // show list all
