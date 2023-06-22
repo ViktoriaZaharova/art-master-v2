@@ -1479,11 +1479,10 @@
 }
 
 .box-text-toggle {
-  overflow: hidden;
-  display: -moz-box;
   display: -webkit-box;
   -webkit-line-clamp: 9;
   -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .box-text-toggle.open {
   overflow: visible;
