@@ -627,6 +627,9 @@
 	.home-item__image, .company-wrapper
 		display: none
 
+	.home-item__bg::before
+		display: none	
+
 	.home-slider-nav .slick-current .home-nav-item__wrap
 		min-height: auto
 
@@ -667,10 +670,18 @@
 	.company-plus
 		font-size: 16px
 		line-height: normal
+		&__col
+			ul
+				max-width: 142px
 
 	.nav-tabs
 		.nav-link
 			padding: 4px 15px
+
+	.portfolio-card
+		margin: 15px 0 0
+		&:first-child, &:nth-child(2)
+			margin: 0
 
 	.reviews-slider
 		.slide

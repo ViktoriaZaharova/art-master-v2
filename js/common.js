@@ -39,7 +39,20 @@ $('.home-slider').slick({
 	slidesToShow: 1,
 	arrows: false,
 	fade: true,
-	swipe: false
+	swipe: false,
+	responsive: [
+		
+		{
+			breakpoint: 576,
+			settings: {
+				swipe: true,
+				asNavFor: '.home-slider-nav',
+				autoplay: true,
+				autoplaySpeed: 4000,
+				fade: false,
+			}
+		}
+	]
 });
 
 $('.home-slider-nav').slick({
@@ -69,7 +82,7 @@ $('.home-slider-nav').slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				autoplay: true,
-				autoplaySpeed: 2000,
+				autoplaySpeed: 4000,
 			}
 		}
 	]
