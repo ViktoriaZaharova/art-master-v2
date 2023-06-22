@@ -1487,6 +1487,7 @@
 .box-text-toggle.open {
   overflow: visible;
   display: block;
+  -webkit-line-clamp: none;
 }
 
 .advantages-manufacturer {
