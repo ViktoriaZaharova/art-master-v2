@@ -1480,11 +1480,8 @@
 
 .box-text-toggle {
   overflow: hidden;
-  text-overflow: ellipsis;
   display: -moz-box;
   display: -webkit-box;
-  line-clamp: 9;
-  box-orient: vertical;
   -webkit-line-clamp: 9;
   -webkit-box-orient: vertical;
 }
