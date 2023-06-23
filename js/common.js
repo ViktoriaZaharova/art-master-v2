@@ -27,13 +27,13 @@ $('.btn-services').on('click', function (e) {
 });
 
 
-$(document).mouseup(function (e) { // событие клика по веб-документу
-	var div = $(".services-dropdown"); // тут указываем ID элемента
-	var btn = $('.btn-services');
-	if (!div.is(e.target) && !btn.is(e.target) && div.has(e.target).length === 0) { // и не по его дочерним элементам
-		div.fadeOut(); // скрываем его
-	}
-});
+// $(document).mouseup(function (e) { // событие клика по веб-документу
+// 	var div = $(".services-dropdown"); // тут указываем ID элемента
+// 	var btn = $('.btn-services');
+// 	if (!div.is(e.target) && !btn.is(e.target) && div.has(e.target).length === 0) { // и не по его дочерним элементам
+// 		div.fadeOut(); // скрываем его
+// 	}
+// });
 
 $('.home-slider').slick({
 	slidesToShow: 1,

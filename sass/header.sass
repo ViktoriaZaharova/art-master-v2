@@ -22,8 +22,8 @@ header
 
 .services-dropdown
 	display: none
-	position: absolute
-	top: 100%
+	position: fixed
+	top: 82px
 	left: 50%
 	transform: translate(-50%,0)
 	z-index: 3
@@ -32,6 +32,8 @@ header
 	background: #fff
 	max-width: 1513px
 	width: 100%
+	height: calc(100vh - 82px)
+	overflow-y: auto
 	&__col
 		padding: 36px 0 38px 22px
 		border-right: 1px solid #C0C0C0
@@ -300,8 +302,8 @@ header
 		position: absolute
 		z-index: 1
 		cursor: pointer
-		right: 20px
-		top: 20px
+		right: 16px
+		top: 29px
 		width: 24px
 		height: 24px
 		&::before, &::after
