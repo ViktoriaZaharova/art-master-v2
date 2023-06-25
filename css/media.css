@@ -772,11 +772,21 @@
   .page-portfolio h1 {
     font-size: 40px;
   }
+  .page-service {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/service-bg.jpg") no-repeat center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/service-bg.jpg") no-repeat center;
+    background-size: cover;
+  }
   .page-service h1 {
     font-size: 50px;
   }
   .page-service .btn {
     padding: 15px 30px;
+  }
+  .page-service2 {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/service-bg2.jpg") no-repeat center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/service-bg2.jpg") no-repeat center;
+    background-size: cover;
   }
   .unique-sings {
     margin: 0 0 70px;
