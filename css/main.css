@@ -1481,17 +1481,28 @@
   min-width: 1092px;
 }
 
-.box-text-toggle {
-  display: -webkit-box;
-  -webkit-line-clamp: 9;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+.box-text-toggle ol, .box-text-toggle ul {
+  padding: 0 0 0 34px;
+  margin: 20px 0;
 }
-.box-text-toggle.open {
-  overflow: visible;
-  display: block;
-  -webkit-line-clamp: none;
-  -webkit-box-orient: horizontally;
+.box-text-toggle ol li, .box-text-toggle ul li {
+  margin: 0 0 10px;
+}
+.box-text-toggle ol li:last-child, .box-text-toggle ul li:last-child {
+  margin: 0;
+}
+.box-text-toggle.hidden-text p {
+  display: inline;
+}
+.box-text-toggle.hidden-text::after {
+  content: "...";
+  display: inline-block;
+}
+
+.btn-load-text {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 .advantages-manufacturer {

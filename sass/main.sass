@@ -47,7 +47,7 @@
 		top: 207px
 		max-width: 993px
 		width: 100%
-		z-index: -1	
+		z-index: -1
 
 .company-wrapper
 	position: absolute
@@ -745,7 +745,7 @@
 	.unique-sings__content
 		padding: 80px 0 120px
 	.unique-sings__image
-		margin: 40px 0 0	
+		margin: 40px 0 0
 
 // service page end			
 
@@ -1002,15 +1002,32 @@
 		min-width: 1092px
 
 .box-text-toggle
-	display: -webkit-box
-	-webkit-line-clamp: 9
-	-webkit-box-orient: vertical
-	overflow: hidden
-	&.open
-		overflow: visible
-		display: block
-		-webkit-line-clamp: none
-		-webkit-box-orient: horizontally
+	// display: -webkit-box
+	// -webkit-line-clamp: 9
+	// -webkit-box-orient: vertical
+	// overflow: hidden
+	// &.open
+	// 	overflow: visible
+	// 	display: block
+	// 	-webkit-line-clamp: none
+	// 	-webkit-box-orient: horizontally
+	ol, ul
+		padding: 0 0 0 34px
+		margin: 20px 0
+		li
+			margin: 0 0 10px
+			&:last-child
+				margin: 0
+	&.hidden-text
+		p
+			display: inline
+		&::after
+			content: '...'
+			display: inline-block
+			// margin: 0 0 0 5px
+
+.btn-load-text
+	order: -1
 
 .advantages-manufacturer
 	margin: 0 0 100px

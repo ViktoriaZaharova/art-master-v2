@@ -41,7 +41,7 @@ $('.home-slider').slick({
 	fade: true,
 	swipe: false,
 	responsive: [
-		
+
 		{
 			breakpoint: 576,
 			settings: {
@@ -146,7 +146,7 @@ $(function () {
 		max: 200,
 		value: 100,
 		animate: "slow",
-		range: "min",    
+		range: "min",
 		create: function () {
 			handle.text($(this).slider("value"));
 		},
@@ -312,25 +312,70 @@ $('.btn-load-reviews').click(function (e) {
 });
 // show list all
 
+
+
+// $(".box-text-toggle").text(function (i, text) {
+
+// 	if (text.length >=298) {
+// 		text = text.substring(0, 298);
+// 		var lastIndex = text.lastIndexOf(" ");       // позиция последнего пробела
+// 		text = text.substring(0, lastIndex) + '...'; // обрезаем до последнего слова
+// 		$(this).siblings('.btn-group').append('<a href="#" class="btn btn-border-grey btn-load-text"><span class="btn-text">показать больше</span><svg class="svg-icon"><use xlink:href="../img/sprite.svg#arrow-bottom"></use></svg></a>');
+// 	}
+
+// 	$(this).text(text);
+// });
+
+
+// // show list all
+// $('.btn-load-text').on('click', function (e) {
+// 	e.preventDefault();
+
+// 	var
+// 		$this = $(this),
+// 		content = $(this).parents().find('.box-text-toggle');
+
+// 	if (!$this.hasClass('trigger')) {
+// 		$this.addClass('trigger');
+// 		$this.find('.btn-text').text('скрыть');
+
+// 		content.addClass('open');
+// 	} else {
+// 		$this.removeClass('trigger');
+// 		$this.find('.btn-text').text('показать больше');
+
+// 		content.removeClass('open');
+// 	}
+// });
 // show list all
-$('.btn-load-text').on('click', function (e) {
-	e.preventDefault();
 
-	var
-		$this = $(this),
-		content = $(this).parents().find('.box-text-toggle');
-
-
-	if (!$this.hasClass('trigger')) {
-		$this.addClass('trigger');
-		$this.find('.btn-text').text('скрыть');
-
-		content.addClass('open');
-	} else {
-		$this.removeClass('trigger');
-		$this.find('.btn-text').text('показать  больше');
-
-		content.removeClass('open');
+$('.box-text-toggle').each(function () {
+	var $this = $(this);
+	var text = $this.html();
+	$this.data('full-text', text);
+	var small = text.substring(0, 298);
+	var isFulled = false;
+	if (small.length < text.length) {
+		$this.html(small);
+		// var dotsDecor = $('<span>...</span>');
+		$(this).siblings('.btn-group').append('<a href="#" class="btn btn-border-grey btn-load-text"><span class="btn-text">показать больше</span><svg class="svg-icon"><use xlink:href="../img/sprite.svg#arrow-bottom"></use></svg></a>');
+		$btn = $('.btn-load-text');
+		$('.btn-load-text').click(function (e) {
+			e.preventDefault();
+			if (!isFulled) {
+				$this.html($this.data('full-text'));
+				$btn.addClass('trigger');
+				$btn.find('.btn-text').text('скрыть');
+				isFulled = true;
+				$this.removeClass('hidden-text');
+			} else {
+				$this.html(small);
+				$btn.removeClass('trigger');
+				$btn.find('.btn-text').text('показать больше');
+				isFulled = false;
+				$this.addClass('hidden-text');
+			}
+		});
+		$this.addClass('hidden-text');
 	}
-});
-// show list all
+})
